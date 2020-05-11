@@ -4,7 +4,7 @@ const router = Router()
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const PassprtLocal = require('passport').Strategy;
+const PassprtLocal = require('passport-local').Strategy;
 
 
 

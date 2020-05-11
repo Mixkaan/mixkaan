@@ -1,0 +1,79 @@
+extends layout
+block append config
+
+  -paginaActual = "subir"
+  block append
+    link(rel="stylesheet", href="/styles/disponible.css")
+
+block main
+
+  div.subtitulo DISPONIBLES
+  div.contenedor
+
+    a(href="/todos_ejemplares")
+      div.animal TODOS NUESTROS EJEMPLARES
+
+    br
+    br
+
+    a(href="/lagartos")
+      div.animal LAGARTOS
+
+    div.contenedor-animales
+
+      a.-borde.animales(href="")
+        div POGONAS
+          img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
+      
+      a.-borde.animales(href="") 
+        div GECKOS
+          img(src="img/disponible/lagartos/geckos.png", alt="unico reptiles")
+
+      a.-borde.animales(href="") 
+        div CAMALEONES
+          img(src="img/disponible/lagartos/camaleones.png", alt="unico reptiles")
+
+      a.-borde.animales(href="") 
+        div VARANOS
+          img(src="img/disponible/lagartos/varanos.png", alt="unico reptiles")
+
+    br
+    br
+    a(href="/serpientes")
+      div.animal SERPIENTES
+
+    div.contenedor-animales
+
+      a.-borde.animales(href="")
+        div POGONAS
+          img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
+      
+      a.-borde.animales(href="") 
+        div GECKOS
+          img(src="img/disponible/lagartos/geckos.png", alt="unico reptiles")
+
+      a.-borde.animales(href="") 
+        div CAMALEONES
+          img(src="img/disponible/lagartos/camaleones.png", alt="unico reptiles")
+
+    br
+    br
+
+    a(href="/tortugas")
+      div.animal TORTUGAS
+
+    //div.contenedor-animales
+
+      div.animales
+        a(href="") PITONES
+          img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
+        
+      div.animales
+        a(href="") BOAS
+          img(src="img/disponible/lagartos/geckos.png", alt="unico reptiles")
+
+      div.animales
+        a(href="") COLUBRIDOS
+          img(src="img/disponible/lagartos/camaleones.png", alt="unico reptiles")
+
+

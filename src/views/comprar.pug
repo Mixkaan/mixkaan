@@ -1,0 +1,82 @@
+extends layout
+block append config
+
+  -paginaActual = "Todos Los Animales"
+  block append
+    link(rel="stylesheet", href="/styles/comprar.css")
+    <script src="https://js.stripe.com/v3/"></script>
+
+block main
+
+  br
+  br
+  br
+  br
+  br
+  br
+
+  div.-padding.contenedor
+
+    h2 ¡ESTAS A UN SÓLO PASO! 
+    br
+    br
+    h5 para realizar tu pago, indica cual de las opciones es la mejor para ti, si tu caso fuera el requerimento de un 
+     | envio aereo, indica cual es tu mejor opción
+    br
+    br
+    br
+    br  
+    h4 RECOGER EL ANIMAL EN TIENDA
+    p=animal.precio
+    input(type='hidden' name='cmd' value='_ext-enter')
+    form(action='https://www.paypal.com/us/cgi-bin/webscr' method='post')
+      input(type='hidden' name='cmd' value='_xclick')
+      input(type='hidden' name='business' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='business_cs_email' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='item_name' value=animal.nombre)
+      input(type='hidden' name='currency_code' value='MXN')
+      input(type='hidden' name='amount' value=animal.precio)
+      input(type='hidden' name='item_number' value=animal.id)
+
+
+      input(type='hidden' name='return' value="/")
+      input.boton(type='image' src='/img/boton-paypal.png' name='submit' alt="compras seguras con unico reptiles")
+
+    br
+    br
+    h4 ENVIO AEREO (VOLARIS)
+    p=animal.precio+1500
+    input(type='hidden' name='cmd' value='_ext-enter')
+    form(action='https://www.paypal.com/us/cgi-bin/webscr' method='post')
+      input(type='hidden' name='cmd' value='_xclick')
+      input(type='hidden' name='business' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='business_cs_email' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='item_name' value=animal.nombre)
+      input(type='hidden' name='currency_code' value='MXN')
+      input(type='hidden' name='amount' value=animal.precio+1500)
+      input(type='hidden' name='item_number' value=animal.id)
+
+
+      input(type='hidden' name='return' value="/")
+      input.boton(type='image' src='/img/boton-paypal.png' name='submit' alt="compras seguras con unico reptiles")
+
+    br
+    br
+    h4 ENVIO AEREO (INTERJET)
+    p=animal.precio+1800
+    input(type='hidden' name='cmd' value='_ext-enter')
+    form(action='https://www.paypal.com/us/cgi-bin/webscr' method='post')
+      input(type='hidden' name='cmd' value='_xclick')
+      input(type='hidden' name='business' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='business_cs_email' value='unicoreptiles@gmail.com')
+      input(type='hidden' name='item_name' value=animal.nombre)
+      input(type='hidden' name='currency_code' value='MXN')
+      input(type='hidden' name='amount' value=animal.precio+1800)
+      input(type='hidden' name='item_number' value=animal.id)
+
+
+      input(type='hidden' name='return' value="/")
+      input.boton(type='image' src='/img/boton-paypal.png' name='submit' alt="compras seguras con unico reptiles")
+
+  br
+  br

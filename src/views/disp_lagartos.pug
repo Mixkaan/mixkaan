@@ -1,0 +1,23 @@
+extends layout
+block append config
+
+  -paginaActual = "subir"
+  block append
+    link(rel="stylesheet", href="/styles/animales.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for lagarto in animales
+      a.-borde.carta(href="/animal-info/"+lagarto.id)
+        div
+          img.animal-img(src=lagarto.path, alt=lagarto.nombre)
+          br
+          br
+          div.info
+            p=lagarto.nombre
+            p=lagarto.fases
+        div.-borde.opacidad
+          p.-boton VER MAS

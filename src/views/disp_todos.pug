@@ -1,0 +1,23 @@
+extends layout
+block append config
+
+  -paginaActual = "Todos Los Animales"
+  block append
+    link(rel="stylesheet", href="/styles/animales.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for animal in animales
+      a.-borde.carta(href="/animal-info/"+animal.id)
+        div
+          img.animal-img(src=animal.path, alt=animal.nombre)
+          br
+          br
+          div.info
+            p=animal.nombre
+            p=animal.fases
+        div.-borde.opacidad
+          p.-boton VER MAS

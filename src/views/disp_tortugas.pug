@@ -1,0 +1,23 @@
+extends layout
+block append config
+
+  -paginaActual = "Tortugas"
+  block append
+    link(rel="stylesheet", href="/styles/animales.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for tortuga in animales
+      a.-borde.carta(href="/animal-info/"+tortuga.id)
+        div
+          img.animal-img(src=tortuga.path, alt=tortuga.nombre)
+          br
+          br
+          div.info
+            p=tortuga.nombre
+            p=tortuga.fases  
+        div.-borde.opacidad
+          p.-boton VER MAS

@@ -1,0 +1,40 @@
+/*COLORES-PRE-DEFINIDOS*/
+:root{
+    --c1: #191818ff;
+    --c2: #010733ff;
+    --c3: #0094c6ff;
+    --c4: #c1dff0ff;
+    --c5: #f5b700ff;
+    --c6: #8ea604ff;
+    --c7: #0b6e4fff;
+    --c8: #aa0000;
+
+    --cb: #ffffff;
+    --cn: #000000;
+
+    --cv: #38c500;
+    --cr: #ff0000;
+}
+/*-------------------------------------------------------------*/  
+
+
+
+body{
+      background-image: url(/img/fondo/fondo-4.png);
+}
+.contenedor{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--c3), var(--c7));
+}
+h2{
+    font-size: 3rem;
+}
+h5{
+    font-size: 1.6rem;
+}
+.boton{
+    width: 40%;
+}

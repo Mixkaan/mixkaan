@@ -1,0 +1,23 @@
+extends layout
+block append config
+
+  -paginaActual = "serpientes"
+  block append
+    link(rel="stylesheet", href="/styles/animales.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for serpiente in animales
+      a.-borde.carta(href="/animal-info/"+serpiente.id)
+        div
+          img.animal-img(src=serpiente.path, alt=serpiente.nombre)
+          br
+          br
+          div.info
+            p=serpiente.nombre
+            p=serpiente.fases
+        div.-borde.opacidad
+          p.-boton VER MAS

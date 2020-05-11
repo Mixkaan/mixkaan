@@ -1,0 +1,79 @@
+extends layout
+block append config
+
+  -paginaActual = "admin preventas"
+  block append
+    link(rel="stylesheet", href="/styles/admin_tablas.css")
+
+block main
+
+  div.admin-nav
+    div
+      a.-boton.animal(href="/subir_animal") AGREGAR UN ANIMAL
+      a.-boton.preventa(href="/subir_preventa") AGREGAR UNA PREVENTA
+    div
+      a.-boton.inicio(href="/") REGRESAR AL INICIO
+
+  br
+  div.contenedor
+    h2.-borde PREVENTAS
+    br
+    table
+      thead
+          tr
+              th ID
+              th NOMBRE
+              th DESCRIPCION
+              th IMAGEN
+              th ACCIONES
+      tbody
+      for preventa in preventas
+          tr
+          tr
+              td= preventa.id
+              td= preventa.nombre
+              td= preventa.descripcion
+              td
+                img(src=preventa.path)
+              td
+                a.-boton.eliminar(href="/preventa/" + preventa.id + "/eliminar") ELIMINAR
+
+
+    br
+    br
+    br
+    br
+    br
+    br
+
+
+    h2.-borde ANIMALES
+    br
+    table
+      thead
+          tr
+              th ID
+              th NOMBRE
+              th DESCRIPCION
+              th SECCION
+              th SUBSECCION
+              th SEXO
+              th EDAD
+              th IMAGEN
+              th ACCIONES
+      tbody
+      for animal in animales
+          tr
+          tr
+              td= animal.id
+              td= animal.nombre
+              td= animal.descripcion
+              td= animal.seccion
+              td= animal.subseccion
+              td= animal.sexo
+              td= animal.edad
+              td
+                img(src=animal.path)
+              td
+                a.-boton.eliminar(href="/animal/" + animal.id + "/eliminar") ELIMINAR
+

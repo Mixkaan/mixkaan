@@ -1,0 +1,37 @@
+/*COLORES-PRE-DEFINIDOS*/
+:root{
+    --color1: rgb(5, 10, 25);
+    --color2: rgb(146, 20, 12);
+    --color3: rgb(147, 214, 32);
+    --color4: rgb(241, 211, 2);
+    --color5: rgb(65, 224, 155);
+  
+    --colorb: rgb(255, 255, 255);
+    --colorn: rgb(0, 0, 0);
+    }
+/*-------------------------------------------------------------*/
+nav{
+    display: none;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    text-align: center;
+}
+a {
+    color: var(--colorb);
+    font-size: 3rem;
+    margin: 5% auto;
+    padding: 5px;
+    border-radius: 2px;
+}
+.animales{
+    background-color: var(--color4);
+}
+.preventas{
+    background-color: var(--color3);
+}

@@ -1,0 +1,17 @@
+extends layout
+block append config
+
+  -paginaActual = "subir"
+  block append
+    link(rel="stylesheet", href="/styles/login.css")
+
+block main
+
+  div.contenedor.-borde
+    h2 INGRESAR
+    form(action="/login", method="post")
+      input.-input(type="text" name="username" placeholder="USUARIO")
+      br
+      input.-input(type="password" name="password" placeholder="CONSTRASEÑA")
+      br
+      button.-boton(type="submit") ACCEDER

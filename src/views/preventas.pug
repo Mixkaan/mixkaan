@@ -1,0 +1,25 @@
+extends layout
+block append config
+
+  -paginaActual = "subir"
+  block append
+    link(rel="stylesheet", href="/styles/preventas.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for preventa in preventas
+      div.carta
+        h2 PREVENTA
+        br
+        img.preventa-img(src=preventa.path, alt=preventa.nombre)
+        br
+        br
+        div.preventa-precio
+          span: img.precio-signo(src="icon/dollar.png", alt="")
+          p=preventa.precio
+        div.preventa-info
+          p=preventa.nombre
+          p=preventa.descripcion

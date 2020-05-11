@@ -1,0 +1,77 @@
+/*COLORES-PRE-DEFINIDOS*/
+:root{
+  --c1: #191818ff;
+  --c2: #010733ff;
+  --c3: #0094c6ff;
+  --c4: #c1dff0ff;
+  --c5: #f5b700ff;
+  --c6: #8ea604ff;
+  --c7: #0b6e4fff;
+  --c8: #aa0000;
+
+  --cb: #ffffff;
+  --cn: #000000;
+
+  --cv: #38c500;
+  --cr: #ff0000;
+}
+/*-------------------------------------------------------------*/
+
+
+body{
+  background-image: url(/img/fondo/fondo-4.png);
+}
+
+
+.contenedor{
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.carta{
+  width: 250px;
+  height: 320px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--color1);
+  transition: all 0.8s;
+}
+.animal-img{
+  width: 230px;
+  height: 230px;
+  border: 2px solid var(--color4);
+  border-radius: 0.4rem;
+}
+.info{
+  color: var(--colorb);
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+
+.opacidad{
+  width: 250px;
+  height: 320;
+  margin: -19rem -10px;
+  padding: 1rem;
+  position: absolute;
+  background-color: var(--c1);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.opacidad p{
+  margin: 55% auto;
+  transition: all 0.3s;
+  background-color: var(--c3);
+}
+.carta:hover .opacidad{
+  margin: -19rem -10px;
+  transition: all 0.3s;
+  opacity: 1;
+}

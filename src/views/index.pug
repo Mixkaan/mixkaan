@@ -1,0 +1,97 @@
+extends layout
+block append config
+
+  -paginaActual = "Inicio"
+  block append
+    link(rel="stylesheet", href="/styles/index.css")
+
+block main
+
+  //CONTENEDOR-LOGO
+  div.logo-contenedor
+    div.parte1
+      img.logo(src="/img/logo.png", alt="unico reptiles")
+    div.parte2
+      div.titulo
+        h1 ÚNICO REPTILES
+        h2 se diferente, sé original ...
+
+      //FACEBOOK-SDK
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v6.0"></script>
+      div.facebook
+        div.fb-page(data-href='https://www.facebook.com/unicoreptiles/' data-width='400' data-height='100'  data-hide-cover='false' data-tabs="timeline,events,messages" data-show-facepile='true')  
+      br
+  
+  //
+  div.subtitulo MIRA NUESTRO CONTENIDO ORIGINAL DE YOUTUBE
+  div.youtube-contenedor
+    br
+    p Suscribete a nuestro canal, activa la campanita de notificaciones
+      | y no te pierdas de nuestros videos y promociones que tenemmos para ti!
+    br
+    <iframe class="youtube" src="https://www.youtube.com/embed/fZ_zjJWoQW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  //UNICO-XAMAN
+  div.subtitulo UNICO X XAMAN
+  div.unico-xaman
+    a(href="")
+      img(src="/icon/whatsapp.png", alt="")
+
+    h3 Unete a nuestro grupo de whatsapp!!
+    p Unete dando click en el icono de abajo y aprovecha antes 
+     | que nadie lasofertas y bichos que tenemos por tiempo limitado 
+     | en la comunidad de UNICOS XAMANITOS
+
+  //NOSOTROS
+  a(name="nosotros")
+  div.subtitulo NOSOTROS
+  div.nosotros
+    div.nosotros-contenedor
+      p ÚNICO REPTILES es una comercializadora y PIMVS avalada anteSEMARNAT, 
+       | nuestra especialidad´se basa en la crianza de pogonas o dragón 
+       | barbudo, también conocido de ésta forma.
+      br
+      p Nosotros contamos con una extensa variedad de ejemplares 
+       | exóticostanto de reptiles como otros ejemplares. Contamos con 
+       | un estándar de calidad riguroso para nuestros especímenes y 
+       | obviamente, para traerte lo mejor que ofrece el mercado. Ademas 
+       | de esto, utilizamos siempre la mejor alimentacion y ofrecemos el 
+       | mejor servicio y asesoría para tu mayor satisfación.
+      br
+      p Tras nuestro proyecto como ÚNICO REPTILES, hay detrás más de 5 
+       | años que nos respaldan, los cuales hay práctica, sabiduria, 
+       | experiencia el mejor servicio al cliente y el mejor 
+       | posicionamiento en el mercado actual, siendo nosotros tu mejor 
+       | opción, a nivel nacional e internacional.
+      br
+      p Nosotros contamos con productos tanto nacionales como exportaciones 
+       | internacionales principalmente de U.S.A y Europa. Contamos con 
+       | génitca y linajes de criaderos extranjeros de prestigio. Contamos 
+       | con envíos a toda parte de la republica y países aledaños, siempre 
+       | con un buen control y manejo de envios aéreo.
+      p De nuestra parte te garantizamos el mejor trato y servicio tanto para 
+       | ti como para tu reptil, asi como asesoramiento depor vida y los 
+       | mejores precios.
+      br
+      br
+      br
+      br
+      h2 UNICO X XAMAN
+      br
+      p ÚNICO REPTILES en conjunto con XAMAN se combinan en un proyecto único y 
+       | exclusivo para traerte solo lo mejor, con mas variedad y mejores precios. 
+       | Además de estas exclusividades, UNICO X XAMAN abre sus surcursales en 
+       | Jalisco y Veracruz, dandote aún más la oportunidad de conocernosy brindarte 
+       | aun más y de mejor manera nuestro apoyo.
+      br
+      p UNICO X XAMAN no solo es para clientes. Si eres una comercializadora o 
+       | PIMVS interesada en crecer y formar parte de nuestro proyecto, afíliate con 
+       | nosotros y obtén beneficios inigualables para tu negocio y crece al lado de 
+       | la experiencia con UNICO & XAMAN.
+      br
+      p Así que recuerda, se diferente, se origina . . . se, UNICO REPTILES . . . se, 
+       | UNICO XAMAN. La elegancia y prestigio en reptiles. Espero disfruten de la página 
+       | y su contenido.
+
+  block footer
+

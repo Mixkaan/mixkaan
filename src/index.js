@@ -31,7 +31,6 @@ app.use(multer({
 }).single('imagen'));
 
 
-
 //VARIABLES GLOBALES
 
 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://unico-reptiles:unico-reptiles@unico-qb2n1.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb://unico-reptiles:unico123@ds231758.mlab.com:31758/heroku_5df7bcgr', {
   useNewUrlParser: true
 })
 

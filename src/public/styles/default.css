@@ -25,10 +25,20 @@ p{
 }
 /*----------PRESETS----------PRESETS----------PRESETS----------*/
 .-borde{
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 .-padding{
   padding: 2rem 1rem;
+}
+
+
+
+.subtitulo{
+  padding: 1rem;
+  color: var(--colorb);
+  text-align: center;
+  font-size: 2.4rem;
+  background-color: var(--colorn);
 }
 
 
@@ -84,7 +94,7 @@ nav{
   }
   .navbar-links{
     width: 70%;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -96,7 +106,7 @@ nav{
     transition: ease-in 0.2s;
   }
   .navbar-links a{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .burger{
     display: block;
@@ -106,16 +116,6 @@ nav{
   transform: translateX(0%);
 }
 
-
-/*------------------*/
-
-.subtitulo{
-  padding: 1rem;
-  color: var(--colorb);
-  text-align: center;
-  font-size: 2.4rem;
-  background-color: var(--colorn);
-}
 
 
 /*-----FOOTER-----*/

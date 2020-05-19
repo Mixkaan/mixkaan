@@ -44,7 +44,6 @@ body{
   width: 230px;
   height: 230px;
   border: 2px solid var(--color4);
-  border-radius: 0.4rem;
 }
 .info{
   color: var(--colorb);

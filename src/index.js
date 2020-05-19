@@ -38,6 +38,7 @@ app.use(multer({
 app.use(require('./routes/index'));
 app.use(require('./routes/disponibles'));
 app.use(require('./routes/preventas'));
+app.use(require('./routes/contactanos'));
 
 app.use(require('./routes/compra'));
 

@@ -1,7 +1,7 @@
 extends layout
 block append config
 
-  -paginaActual = "subir"
+  -paginaActual = "Preventas"
   block append
     link(rel="stylesheet", href="/styles/preventas.css")
 
@@ -11,15 +11,24 @@ block main
   br
   div.contenedor
     for preventa in preventas
-      div.carta
+      div.-borde.carta
         h2 PREVENTA
         br
-        img.preventa-img(src=preventa.path, alt=preventa.nombre)
         br
-        br
-        div.preventa-precio
-          span: img.precio-signo(src="icon/dollar.png", alt="")
-          p=preventa.precio
-        div.preventa-info
-          p=preventa.nombre
-          p=preventa.descripcion
+        div.-padding.contenido
+          img.preventa-img(src=preventa.path, alt=preventa.nombre)
+          
+          br
+          br
+          div.preventa-info
+            div.preventa-precio
+              span: img.precio-signo(src="icon/dollar.png", alt="")
+              p=preventa.precio
+            br
+            p=preventa.nombre
+            br
+            p=preventa.descripcion
+            br
+            br
+            a.-boton.apartar(href="") ¡APARTALO AHORA!
+        br 

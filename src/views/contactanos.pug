@@ -1,0 +1,35 @@
+extends layout
+block append config
+
+  -paginaActual = "Contactanos"
+  block append
+    link(rel="stylesheet", href="/styles/contactanos.css")
+
+block main
+
+  br
+  br
+  div.-padding.contenedor
+    div.-borde.subtitulo CONTACTANOS
+    br
+    br
+    div.redes-sociales
+
+      div FACEBOOK
+        div.social
+          a(href="")
+            img.social-img(src="/icon/facebook.png", alt="")
+        br
+
+      div INSTAGRAM
+        div.social
+          a(href="")
+            img.social-img(src="/icon/instagram.png", alt="")
+        br
+
+      div YOUTUBE
+        div.social
+          a(href="")
+            img.social-img(src="/icon/youtube.png", alt="")
+        br
+    br

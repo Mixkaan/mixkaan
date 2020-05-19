@@ -15,6 +15,7 @@
 .logo-contenedor{
   width: 100%;
   height: auto;
+  margin-top: 8vh ;
   padding: 1rem;
   text-align: center;
   background-image: url(/img/fondo/fondo-4.png);
@@ -41,7 +42,7 @@
 /*-----SECCION-YOUTUBE-----*/
 .youtube-contenedor{
   width: 100%;
-  height: 100%;
+  height: auto;
   color: var(--colorb);
   text-align: center;
   background-color: var(--color1);
@@ -53,11 +54,11 @@ iframe{
 }
 
 
-/**----------*/
+/*-----UNICO-X-XAMAN-----*/
 .unico-xaman{
   color: var(--colorb);
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: auto;
   padding: 2.4rem 2rem;
   text-align: center;
@@ -84,7 +85,7 @@ iframe{
   background-color: var(--color1);
 }
 .nosotros-contenedor{
-  padding: 5rem 3rem;
+  padding: 5rem 0.5rem;
   border: 5px solid var(--color3);
   border-radius: 4px;
 }
@@ -147,6 +148,11 @@ iframe{
   .unico-xaman p{
     margin: 1.4rem 0;
     font-size: 1.4rem;
+  }
+
+
+  .nosotros-contenedor{
+    padding: 5rem 3rem;
   }
 
 }

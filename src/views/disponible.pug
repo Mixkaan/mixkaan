@@ -1,4 +1,4 @@
-extends layout
+extends ../views/layout
 block append config
 
   -paginaActual = "subir"
@@ -21,7 +21,7 @@ block main
 
     div.contenedor-animales
 
-      a.-borde.animales(href="")
+      a.-borde.animales(href="/pogonas")
         div POGONAS
           img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
       
@@ -45,16 +45,16 @@ block main
     div.contenedor-animales
 
       a.-borde.animales(href="")
-        div POGONAS
-          img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
+        div PITONES
+          img(src="img/disponible/serpientes/pitones.png", alt="unico reptiles")
       
       a.-borde.animales(href="") 
-        div GECKOS
-          img(src="img/disponible/lagartos/geckos.png", alt="unico reptiles")
+        div BOAS
+          img(src="img/disponible/serpientes/boas.png", alt="unico reptiles")
 
       a.-borde.animales(href="") 
-        div CAMALEONES
-          img(src="img/disponible/lagartos/camaleones.png", alt="unico reptiles")
+        div COLÚBRIDOS
+          img(src="img/disponible/serpientes/colubridos.jpg", alt="unico reptiles")
 
     br
     br
@@ -62,18 +62,8 @@ block main
     a(href="/tortugas")
       div.animal TORTUGAS
 
-    //div.contenedor-animales
+    div.contenedor-animales
 
-      div.animales
-        a(href="") PITONES
-          img(src="img/disponible/lagartos/pogonas.png", alt="unico reptiles")
-        
-      div.animales
-        a(href="") BOAS
-          img(src="img/disponible/lagartos/geckos.png", alt="unico reptiles")
-
-      div.animales
-        a(href="") COLUBRIDOS
-          img(src="img/disponible/lagartos/camaleones.png", alt="unico reptiles")
-
-
+      a.-borde.animales(href="")
+        div TORTUGAS
+          img(src="img/disponible/tortugas/tortugas.png", alt="unico reptiles")

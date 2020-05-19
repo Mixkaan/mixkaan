@@ -32,8 +32,6 @@ router.get('/tortugas', async(req, res) => {
 
 
 
-
-
 //SELECIONAR-ANIMAL-&-REDIRECIONAR-A-MAS-INFORMACION
 router.get('/animal-info/:id', async(req, res) => {
   const {id} = req.params;

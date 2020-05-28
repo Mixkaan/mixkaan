@@ -1,0 +1,81 @@
+extends layout
+block append config
+
+  -paginaActual = "Pitones"
+  block append
+    link(rel="stylesheet", href="/styles/animales.css")
+
+block main
+
+  br
+  br
+  div.contenedor
+    for animal in animales
+      a.-borde.carta(href="/animal-info/"+animal.id)
+        div
+          img.-borde.animal-img(src=animal.path, alt=animal.nombre)
+          br
+          br
+          div.info
+            p=animal.nombre
+            p=animal.fases
+        div.-borde.opacidad
+          p.-boton VER MAS
+
+
+    ////--NO-DISPONIBLES
+
+    div.-borde.carta
+      div
+        img.-borde.animal-img(src="/img/no-disponible/serpientes/piton/a-m-blade-clown.png", alt="")
+        br
+        br
+        div.info
+          p PITON BOLA
+          p BLADE, CLOWN
+      div.-borde.opacidad
+        p.-boton.alerta FUERA DE STOCK
+
+    div.-borde.carta
+      div
+        img.-borde.animal-img(src="/img/no-disponible/serpientes/piton/c-m-candino-albino.png", alt="")
+        br
+        br
+        div.info
+          p PITON BOLA
+          p CANDINO, ALBINO
+      div.-borde.opacidad
+        p.-boton.alerta FUERA DE STOCK
+
+    div.-borde.carta
+          div
+            img.-borde.animal-img(src="/img/no-disponible/serpientes/piton/a-m-pied.png", alt="")
+            br
+            br
+            div.info
+              p PITON BOLA
+              p PIED
+          div.-borde.opacidad
+            p.-boton.alerta FUERA DE STOCK
+
+    div.-borde.carta
+          div
+            img.-borde.animal-img(src="/img/no-disponible/serpientes/piton/c-m-quimera-paradox.png", alt="")
+            br
+            br
+            div.info
+              p PITON BOLA
+              p QUIMERA, PARADOX
+          div.-borde.opacidad
+            p.-boton.alerta FUERA DE STOCK
+
+    div.-borde.carta
+          div
+            img.-borde.animal-img(src="/img/no-disponible/serpientes/piton/a-m-sprusso.png", alt="")
+            br
+            br
+            div.info
+              p PITON BOLA
+              p SUPER RUSSO
+          div.-borde.opacidad
+            p.-boton.alerta FUERA DE STOCK

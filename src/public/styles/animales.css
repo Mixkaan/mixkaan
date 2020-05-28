@@ -29,11 +29,12 @@ body{
   margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .carta{
   width: 250px;
   height: 320px;
-  margin: 20px auto;
+  margin: 12vh 2.5rem;
   padding: 10px;
   text-align: center;
   overflow: hidden;
@@ -73,4 +74,10 @@ body{
   margin: -19rem -10px;
   transition: all 0.3s;
   opacity: 1;
+}
+
+
+
+.opacidad .alerta{
+  background-color: red;
 }

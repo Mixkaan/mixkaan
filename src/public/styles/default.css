@@ -22,6 +22,7 @@
 }
 p{
   font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 /*----------PRESETS----------PRESETS----------PRESETS----------*/
 .-borde{
@@ -71,6 +72,7 @@ nav{
   width: 60%;
   display: flex;
   justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
 }
 .navbar-links a{
   font-size: 1rem;

@@ -4,21 +4,21 @@ const router = Router()
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const PassprtLocal = require('passport-local').Strategy;
+const PassportLocal = require('passport-local').Strategy;
 
 
 
 
 
-router.use(cookieParser('unicoReptiles'));
+router.use(cookieParser('UnicoReptiles'));
 router.use(session({
-  secret: 'unicoReptiles',
+  secret: 'UnicoReptiles',
   resave: true,
   saveUninitialized: true,
 }));
 router.use(passport.initialize());
 router.use(passport.session());
-passport.use(new PassprtLocal(function(
+passport.use(new PassportLocal(function(
   username, password, done) {
   if(username === 'UnicoReptiles' && password === 'UnicoReptiles123')
     return done(null,{id: 1, name: 'Leo'});

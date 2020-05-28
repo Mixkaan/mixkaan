@@ -27,7 +27,7 @@ router.get('/serpientes', async(req, res) => {
 
 //-----PITONES
 router.get('/serpientes/pitones', async(req, res) => {
-  const animales = await Animal.find({subseccion:"pitones"});
+  const animales = await Animal.find({seccion:"serpientes", subseccion:"pitones"});
   res.render('disp_pitones', {animales});
 });
 //-----BOAS

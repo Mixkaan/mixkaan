@@ -26,17 +26,17 @@ router.get('/serpientes', async(req, res) => {
 //SUB-SECCIONES-SERPIENTES//
 
 //-----PITONES
-router.get('/boas', async(req, res) => {
+router.get('/serpientes/pitones', async(req, res) => {
   const animales = await Animal.find({subseccion:"pitones"});
   res.render('disp_pitones', {animales});
 });
 //-----BOAS
-router.get('/pitones', async(req, res) => {
+router.get('/serpientes/boas', async(req, res) => {
   const animales = await Animal.find({subseccion:"boas"});
   res.render('disp_boas', {animales});
 });
 //-----COLUBRIDOS
-router.get('/colubridos', async(req, res) => {
+router.get('/serpientes/colubridos', async(req, res) => {
   const animales = await Animal.find({subseccion:"colubridos"});
   res.render('disp_colubridos', {animales});
 });

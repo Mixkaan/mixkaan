@@ -20,7 +20,7 @@ router.use(passport.initialize());
 router.use(passport.session());
 passport.use(new PassportLocal(function(
   username, password, done) {
-  if(username === 'UnicoReptiles' && password === 'UnicoReptiles123')
+  if(username === 'Unicoreptiles' && password === 'Unicoreptiles123')
     return done(null,{id: 1, name: 'Leo'});
   done(null, false);
 }));
@@ -43,11 +43,7 @@ router.post('/login', passport.authenticate('local',{
 
 
 
-
-
-
-
-//INDEX-PAGINA-PRINCIPAL
+/* //INDEX-PAGINA-PRINCIPAL
 router.get('/login', (req, res) => {
   res.render('login')
 });
@@ -56,6 +52,5 @@ router.post('/login', passport.authenticate({
   successRedirect: '/admin',
   failureRedirect: '/login',
 }));
-
-
+ */
 module.exports = router;

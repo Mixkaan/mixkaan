@@ -3,6 +3,7 @@ const router = Router();
 const {unlink} = require('fs-extra');
 const path = require('path');
 
+const passport = require('passport');
 
 const Preventa = require('../models/Preventa');
 const Animal = require('../models/Animal');

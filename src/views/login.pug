@@ -14,4 +14,19 @@ block main
       br
       input.-input(type="password" name="password" placeholder="CONSTRASEÑA")
       br
-      button.-boton(type="submit") ACCEDER
+      button.-boton(onclik="validar()") ACCEDER
+
+  script.
+    function validar ()
+    {
+      var usuario = document.getElementById('username').value
+      var password = document.getElementById('password').value
+
+      if(usuario == "Unicoreptiles" && password == "Unicoreptiles")
+      {
+        alert("muy bien")
+      }
+      else{
+        alert("hay un problemas, vuelve a intentarlo")
+      }
+    }

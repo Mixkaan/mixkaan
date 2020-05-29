@@ -31,10 +31,10 @@ passport.deserializeUser(function(id, done) {
   done(null, {id: 1, name: 'Leo'})
 });
 
-
 router.get('/login', (req, res) => {
   res.render('login')
 });
+
 
 router.post('/login', passport.authenticate('local',{
   successRedirect: '/admin',

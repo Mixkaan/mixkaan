@@ -54,7 +54,7 @@ router.post('/subir_animal', async(req, res) => {
   animal.filename =req.file.filename;
   animal.path = '/img/uploads/' + req.file.filename;
   animal.originalname =req.file.originalname;
-  animal.mimeytpe =req.file.mimeytpe;
+  animal.mimetype =req.file.mimetype;
   animal.size =req.file.size;
 
   await animal.save();
@@ -74,7 +74,7 @@ router.post('/subir_preventa', async(req, res) => {
   preventa.filename =req.file.filename;
   preventa.path = '/img/uploads/' + req.file.filename;
   preventa.originalname =req.file.originalname;
-  preventa.mimeytpe =req.file.mimeytpe;
+  preventa.mimetype =req.file.mimetype;
   preventa.size =req.file.size;
 
   await preventa.save();
@@ -98,8 +98,6 @@ router.get('/preventa/:id/eliminar', async(req, res) => {
   await unlink(path.resolve('./src/public' + preventa.path));
   res.redirect('/admin');
 });
-
-
 
 module.exports = router;
 

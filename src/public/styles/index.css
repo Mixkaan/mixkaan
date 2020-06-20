@@ -9,23 +9,98 @@ body{
   background-image: url(/img/fondo/fondo-1.png);
 } */
 
-/*----INICIO-BANNER----*/
-.inicio/*grid*/{
+/*/----INICIO-BANNER----INICIO-BANNER----INICIO-BANNER----INICIO-BANNER----/*/
+.inicio-bann{
   width: 100%;
   height: auto;
-  padding: 2rem;
   grid-template-columns: auto auto;
-  justify-content: center;
   align-items: center;
+  column-gap: 5%;
+  row-gap: 5%;
   background-size: cover;
-  background-position: center;
   background-image: url(/img/fondo/fondo-1.png);
-} 
+}
+.logo-img{
+  width: 70%;
+  height: auto;
+}
+.logo-txt{
+  width: 80%;
+  height: auto;
+}
+
+
+/*/----SECCION-CONTACTOS----SECCION-CONTACTOS----SECCION-CONTACTOS----/*/
+.contacto{
+  height: auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 2%;
+}
+.red img{
+  width: 20%;
+  height: auto;
+  float: right;
+  margin-top: -2rem;
+}
+
+
+/*/----CATEGORIAS----CATEGORIAS----CATEGORIAS----CATEGORIAS----CATEGORIAS----/*/
+.categorias{
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  justify-content: center;
+  background: linear-gradient(45deg, var(--col4), var(--col5));
+}
+.categoria img{
+  background-color: var(--col8);
+  transition: all 0.8s;
+}
+.categoria:hover:nth-child(1n) img{
+  background-color: brown;
+}
+.categoria:hover:nth-child(2n) img{
+  background-color: cadetblue;
+}
+.categoria:hover:nth-child(3n) img{
+  background-color: chartreuse;
+}
+.categoria:hover:nth-child(4n) img{
+  background-color: darkcyan;
+}
+.categoria hr{
+  width: 40%;
+  margin: auto;
+  border: 0.2rem solid white;
+  border-radius: 4px;
+  transition: all 0.8s;
+}
+.categoria:hover hr{
+  width: 70%;
+}
+
+
+
+/*/----BLOG----/*/
+.blog{
+  grid-template-columns: 50% 20% 20%;
+  column-gap: 5%;
+}
+.cont_1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.cont_2{
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.cont_img1{
+  background-image: url(/img/blog/iguana.jpg);
+}
 
 
 /*----DISEÑO-RESPONSIVE-((MOVIL))----*/
 @media screen and (max-width: 800px) {
-  .inicio{
+  .inicio-bann{
     grid-template-columns: auto;
   }
   .logo-imagen{
@@ -35,44 +110,38 @@ body{
     width: 100%;
   }
 
+
+
+
   .contacto{
     grid-template-columns: auto;
+    row-gap: 2rem;
   }
 
 
 
-  /*----CATEGORIAS----*/
+
+  /*/----CATEGORIAS/*/
   .categoria{
-    width: 70%;
+    padding-bottom: 2.5rem;
   }
+
+
 
 
 
   /*----BLOG-DESTACADOS----*/
-  .blog-dest{
-    grid-template-columns: auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
-  }
   .blog{
+    grid-template-columns: auto;
+    row-gap: 5%;
+  }
+  .cont_1{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 1;
   }
-  .blog-img{
-    width: 100%;
-    height: 25vh;
-    margin: auto;
-    background-position: 20% 40%;
-    background-size: 200%;
-  }
-
-  .cuidado{
+  .cont_2{
     grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .cuidado-img{
-    width: 100%;
-    height: 25vh;
+    grid-column-end: 1;
   }
 
 

@@ -8,94 +8,138 @@ block append config
 block main
 
   br
-  //CONTENEDOR-LOGO
-  div.logo-contenedor
-    div.parte1
-      img.logo(src="/img/logo.png", alt="unico reptiles")
-    div.parte2
-      div.titulo
-        h1 ÚNICO REPTILES
-        h2 se diferente, sé original ...
+  section.inicio-bann.-Menu-margen.-Grid
+    div
+      img.logo-imagen(src="/img/logo/mixkaan.png", alt="")
+    div
+      img.logo-letra(src="/img/logo/mixkaan-letr-b.png", alt="")
 
-      //FACEBOOK-SDK
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v6.0"></script>
-      div.facebook
-        div.fb-page(data-href='https://www.facebook.com/unicoreptiles/' data-width='400' data-height='100'  data-hide-cover='false' data-tabs="timeline,events,messages" data-show-facepile='true')  
+
+
+  section.contacto.-Col-f2.-Padd.-Grid
+
+    div.red.face.-Col-f8.-Padd.-Borde.-Shadow
+        h3 FACEBOOK
+        h4 Mixkaan exótics
+        a(href=""): span: img(src="/icon/facebook.png", alt="")
+
+    div.red.insta.-Col-f8.-Padd.-Borde.-Shadow
+      h3 INSTAGRAM
+      h4 Mixkaan exótics
+      a(href=""): span: img(src="/icon/instagram.png", alt="")
+
+    div.red.whats.-Col-f8.-Padd.-Borde.-Shadow
+      h3 WHATSAPP
+      h4 +52 133 289 911 83
+      a(href=""): span: img(src="/icon/whatsapp.png", alt="")
+
+
+  //----CATEGORIAS----//
+  div.-Sub 
+  section.categorias.-Flex.-Padd2
+
+    div.categoria.-Center
+      a(href=""): img.-Padd.-Shadow(src="/icon/facebook.png", alt="")
       br
       br
+      hr
+      h3 DISPONIBLE
+
+    div.categoria.-Center
+      a(href=""): img.-Padd.-Shadow(src="/icon/facebook.png", alt="")
       br
-  
+      br
+      hr
+      h3 COLECCION
+
+    div.categoria.-Center
+      a(href=""): img.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      br
+      br
+      hr
+      h3 ACCSESORIOS
+
+    div.categoria.-Center
+      a(href=""): img.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      br
+      br
+      hr
+      h3 NUESTRO BLOG
+
+
+
+  //----BLOG-DESTACADOS----//
+  div.-Sub LO MAS DESTACADO
+  section.blog-dest.-Grid.-Padd3.-Col-f3
+
+    div.blog.-Borde.-Padd.-Center.-Shadow
+      h2 LAS IGUANAS ¿EN PELIGRO DE EXTINSIÓN?
+      br
+      br
+      div.-Img-borde.-Img-w80.-M-auto.-Borde
+        div.blog-img.-Borde
+      p.-Padd2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
+        |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
+        |ipsam, ut consectetur quia natus, amet accusantium aperiam voluptates 
+        |libero!Possimus mollitia eveniet similique placeat quos sint unde 
+        |veniam aliquid deserunt recusandae repudiandae voluptas quia corporis 
+        |ab dolore eligendi animi doloremque reiciendis, saepe perspiciatis? 
+        |Corrupti dolores rem odio voluptate aperiam?
+
+      a.-Btn-ver-mas(href="") ver mas
+
+    div.cuidado.-Borde.-Padd.-Center.-Shadow
+      h2 DRAGON BARBUDO... TODO LO QUE NECESITAS SABER
+      br
+      div.-Img-borde.-Img-w80.-M-auto.-Borde
+        div.cuidado-img.-Borde
+      p.-Padd2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
+        |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
+        |ipsam, ut consectetur quia natus, amet accusantium aperiam voluptates 
+        |libero!Possimus mollitia Possimus mollitia Possimus mollitia
+
+      a.-Btn-ver-mas(href="") ver mas
+
+
+
+  //----XQ-NOSOTROS----//
+  div.-Sub ¿PORQUE NOSOTROS?
+  section.-Padd.-Col-f2
+
+    div.-Col-f8.-Borde.-Padd2.-Shadow
+      h2.-F-size2.-Center ¡PORQUE SI!
+      br
+      br
+      div.intro.-Grid
+        img.intro-img1.-Borde(src="/img/blog/iguana.jpg", alt="")
+        div.intro-txt.-Justify.-M-auto
+          p Mixkaan exotics es la mejor opcion para adquiris tus bichos.
+            |Nuestro amor y pasion por la vida silvestre te garantiza el mejor 
+            |de los servicios.
+          br
+          p Cada animal adquirido por nosotros pasan por una cuarentena para 
+            |garantizar su buen estado de salud, ademas de una buena alimentacion. 
+            |De esta manera cada bicho disponible asegura una buena epexiencias para 
+            |todos nuestros clientes.
+          br
+          p Asi que cada que compras un bichos con nosotros, adquieres calidad 
+            |y amor mixkaan &#x1F40D; &#x1F499;
+
+
+
+
+
+
+
+
+
+  //div.popup(onClick="popUp()") click
+    span.popuptexto#Popup oliwis
+  //Con este trozo de codigo puedo invocar un pop-up
   //
-  div.subtitulo MIRA NUESTRO CONTENIDO ORIGINAL DE YOUTUBE
-  div.-padding.youtube-contenedor
-    br
-    p Suscribete a nuestro canal, activa la campanita de notificaciones
-      | y no te pierdas de nuestros videos y promociones que tenemmos para ti!
-    br
-    <iframe class="youtube" src="https://www.youtube.com/embed/fZ_zjJWoQW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  //UNICO-XAMAN
-  div.subtitulo UNICO X XAMAN
-  div.unico-xaman
-    a(href="")
-      img(src="/icon/whatsapp.png", alt="")
+  //
+  //Y con este llamar a la funcion de codigo JS
 
-    h3 Unete a nuestro grupo de whatsapp!!
-    
-    p Unete dando click en el icono de abajo y aprovecha antes 
-     | que nadie lasofertas y bichos que tenemos por tiempo limitado 
-     | en la comunidad de UNICOS XAMANITOS
 
-  //NOSOTROS
-  a(name="nosotros")
-  div.subtitulo NOSOTROS
-  div.nosotros
-    div.nosotros-contenedor
-      p ÚNICO REPTILES es una comercializadora y PIMVS avalada anteSEMARNAT, 
-       | nuestra especialidad´se basa en la crianza de pogonas o dragón 
-       | barbudo, también conocido de ésta forma.
-      br
-      p Nosotros contamos con una extensa variedad de ejemplares 
-       | exóticostanto de reptiles como otros ejemplares. Contamos con 
-       | un estándar de calidad riguroso para nuestros especímenes y 
-       | obviamente, para traerte lo mejor que ofrece el mercado. Ademas 
-       | de esto, utilizamos siempre la mejor alimentacion y ofrecemos el 
-       | mejor servicio y asesoría para tu mayor satisfación.
-      br
-      p Tras nuestro proyecto como ÚNICO REPTILES, hay detrás más de 5 
-       | años que nos respaldan, los cuales hay práctica, sabiduria, 
-       | experiencia el mejor servicio al cliente y el mejor 
-       | posicionamiento en el mercado actual, siendo nosotros tu mejor 
-       | opción, a nivel nacional e internacional.
-      br
-      p Nosotros contamos con productos tanto nacionales como exportaciones 
-       | internacionales principalmente de U.S.A y Europa. Contamos con 
-       | génitca y linajes de criaderos extranjeros de prestigio. Contamos 
-       | con envíos a toda parte de la republica y países aledaños, siempre 
-       | con un buen control y manejo de envios aéreo.
-      p De nuestra parte te garantizamos el mejor trato y servicio tanto para 
-       | ti como para tu reptil, asi como asesoramiento depor vida y los 
-       | mejores precios.
-      br
-      br
-      br
-      br
-      h2 UNICO X XAMAN
-      br
-      p ÚNICO REPTILES en conjunto con XAMAN se combinan en un proyecto único y 
-       | exclusivo para traerte solo lo mejor, con mas variedad y mejores precios. 
-       | Además de estas exclusividades, UNICO X XAMAN abre sus surcursales en 
-       | Jalisco y Veracruz, dandote aún más la oportunidad de conocernosy brindarte 
-       | aun más y de mejor manera nuestro apoyo.
-      br
-      p UNICO X XAMAN no solo es para clientes. Si eres una comercializadora o 
-       | PIMVS interesada en crecer y formar parte de nuestro proyecto, afíliate con 
-       | nosotros y obtén beneficios inigualables para tu negocio y crece al lado de 
-       | la experiencia con UNICO & XAMAN.
-      br
-      p Así que recuerda, se diferente, se origina . . . se, UNICO REPTILES . . . se, 
-       | UNICO XAMAN. La elegancia y prestigio en reptiles. Espero disfruten de la página 
-       | y su contenido.
-
-  block footer
-
+  //SCRIPTS----SCRIPTS----SCRIPTS----
+  script(src="/javascript/pop-up.js")

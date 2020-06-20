@@ -1,158 +1,85 @@
-/*COLORES-PRE-DEFINIDOS*/
-:root{
-  --color1: rgb(5, 10, 25);
-  --color2: rgb(146, 20, 12);
-  --color3: rgb(147, 214, 32);
-  --color4: rgb(241, 211, 2);
-  --color5: rgb(65, 224, 155);
-
-  --colorb: rgb(255, 255, 255);
-  --colorn: rgb(0, 0, 0);
-  }
-/*-------------------------------------------------------------*/
-
-/*-----LOGO-CONTENEDOR-----*/
-.logo-contenedor{
+body{
+  background-color: brown;
+}
+/* .parallax{
+  position: absolute;
+  height: 100vh;
   width: 100%;
-  height: auto;
-  margin-top: 8vh ;
-  padding: 1rem;
-  text-align: center;
-  background-image: url(/img/fondo/fondo-4.png);
   background-size: cover;
-}
-.logo{
-  width: 60%;
-  height: auto;
-  align-items: center;
-}
-.titulo{
-  width: 100%;
-  padding: 0 1rem;
-  font-size: 1.4rem;
-  color: var(--colorb);
-}
-.facebook{
-  width: 100%;
-  height: 30%;
-  margin: 
-  0rem auto;
-}
-
-/*-----SECCION-YOUTUBE-----*/
-.youtube-contenedor{
-  width: 100%;
-  height: auto;
-  color: var(--colorb);
-  text-align: center;
-  background-color: var(--color1);
-}
-iframe{
-  width: 95%;
-  height: 50%;
-  margin: 20% auto;
-}
-
-
-/*-----UNICO-X-XAMAN-----*/
-.unico-xaman{
-  color: var(--colorb);
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 2.4rem 2rem;
-  text-align: center;
-  justify-content: center;
   background-image: url(/img/fondo/fondo-1.png);
-  background-size: cover;
-}
-.unico-xaman h3{
-  margin: 2.4rem 0;
-  font-size: 2.4rem;
-}
-.unico-xaman p{
-  margin: 1.4rem 0;
-  font-size: 1.4rem;
-}
+} */
 
-/*-----SECCION-NOSOTROS-----*/
-.nosotros{
-  color: var(--colorb);
+/*----INICIO-BANNER----*/
+.inicio/*grid*/{
   width: 100%;
   height: auto;
   padding: 2rem;
-  text-align: center;
-  background-color: var(--color1);
-}
-.nosotros-contenedor{
-  padding: 5rem 0.5rem;
-  border: 5px solid var(--color3);
-  border-radius: 4px;
-}
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/img/fondo/fondo-1.png);
+} 
+
+
+/*----DISEÑO-RESPONSIVE-((MOVIL))----*/
+@media screen and (max-width: 800px) {
+  .inicio{
+    grid-template-columns: auto;
+  }
+  .logo-imagen{
+    width: 100%;
+  }
+  .logo-letra{
+    width: 100%;
+  }
+
+  .contacto{
+    grid-template-columns: auto;
+  }
 
 
 
-@media(min-width: 800px){
-  /*-----LOGO-CONTENEDOR-----*/
-  .logo-contenedor{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .logo{
-    width: 100%;
-    height: auto;
-    margin: 4rem auto;
-  }
-  .titulo{
-    width: 100%;
-    margin: 15% auto;
-    padding: 0;
-    color: var(--colorb);
-  }
-  .facebook{
-    width: 100%;
-  }
-  .parte1{
-    width: 40%;
-  }
-  .parte2{
-    width: 60%;
+  /*----CATEGORIAS----*/
+  .categoria{
+    width: 70%;
   }
 
-  /*-----SECCION-YOUTUBE-----*/
-  .youtube-contenedor{
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    color: var(--colorb);
-    text-align: center;
-    background-color: var(--color1);
+
+
+  /*----BLOG-DESTACADOS----*/
+  .blog-dest{
+    grid-template-columns: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
   }
-  iframe{
-    height: 85%;
-    margin: 0% auto;
+  .blog{
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
-  .unico-xaman{
-    color: var(--colorb);
+  .blog-img{
     width: 100%;
-    height: 100%;
+    height: 25vh;
     margin: auto;
-    padding: 2.4rem 2rem;
-    text-align: center;
-    justify-content: center;
+    background-position: 20% 40%;
+    background-size: 200%;
   }
-  .unico-xaman h3{
-    margin: 2.4rem 0;
-    font-size: 2.4rem;
+
+  .cuidado{
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
-  .unico-xaman p{
-    margin: 1.4rem 0;
-    font-size: 1.4rem;
+  .cuidado-img{
+    width: 100%;
+    height: 25vh;
   }
 
 
-  .nosotros-contenedor{
-    padding: 5rem 3rem;
-  }
 
+  /*----XQ-NOSOTROS----*/
+  .intro{
+    grid-template-columns: auto;
+  }
 }
+

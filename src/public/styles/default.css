@@ -1,68 +1,43 @@
-/*COLORES-PRE-DEFINIDOS*/
-:root{
-  --color1: rgb(5, 10, 25);
-  --color2: rgb(146, 20, 12);
-  --color3: rgb(147, 214, 32);
-  --color4: rgb(241, 211, 2);
-  --color5: rgb(65, 224, 155);
-
-  --colorb: rgb(255, 255, 255);
-  --colorn: rgb(0, 0, 0);
-  }
-/*-------------------------------------------------------------*/
-
-
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+
   list-style: none;
-  color: var(--colorb);
-}
-p{
-  font-size: 1.2rem;
+  text-decoration: none;
+
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 /*----------PRESETS----------PRESETS----------PRESETS----------*/
-.-borde{
-  border-radius: 0.2rem;
+
+
+.parallax-contenedor{
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px 0;
 }
-.-padding{
-  padding: 2rem 1rem;
-}
-
-
-
-.subtitulo{
-  padding: 1rem;
-  color: var(--colorb);
-  text-align: center;
-  font-size: 2.4rem;
-  background-color: var(--colorn);
-}
-
-
-.-input{
-  color: var(--colorn);
-}
-.-boton{
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  font-weight: bolder;
+.parallax{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(/img/fondo/fondo-1.png);
 }
 
 
 /*---------MENU---------*/
 nav{
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   display: flex;
   position: fixed;
   z-index: 1000;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--colorn);
+  background-color: black;
 }
 .logo-nav{
   width: 10%;
@@ -75,19 +50,23 @@ nav{
 .navbar-links a{
   font-size: 1rem;
   font-weight: bold;
+  transition: all 0.4s;
+}
+.navbar-links a:hover{
+  color: var(--col6);
 }
 
 .burger{
   display: none;
   cursor: pointer;
 }
-
 .burger div{
   width: 25px;
   height: 3px;
   margin: 5px;
   background-color: white;
 }
+
 @media screen and (max-width:800px){
   .logo-nav{
     width: 30%;
@@ -120,35 +99,90 @@ nav{
 
 /*-----FOOTER-----*/
 .footer{
-  width: 100%;
   height: auto;
-  padding: 2rem;
-  background-color: var(--color4);
-  color: var(--colorb);
   text-align: center;
 }
+.letra-footer{
+  width: 60vw;
+  height: auto;
+}
 .logo-footer{
-  width: 80px;
-  height: 80px;
-  border: none;
+  width: 30vw;
+  height: auto;
 }
-.footer h5{
-  font-size: 1.4rem;
+@media screen and (min-width: 800px){
+  .letra-footer{
+    width: 30vw;
+    height: auto;
+  }
+  .logo-footer{
+    width: 10vw;
+  }
 }
-.footer h6{
-  font-size: 1rem;
+
+
+
+
+
+
+
+
+
+
+
+/*----POP-UP----*/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+/* The actual popup */
+.popup .popuptexto {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -80px;
+}
 
+/* Popup arrow */
+.popup .popuptexto::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
-
-
-
-
-
-
-
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 
 
 

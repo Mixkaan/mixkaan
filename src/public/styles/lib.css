@@ -1,0 +1,197 @@
+/*//LIBRERIA DE ESTILOS CSS PARA LOS PREFIJOS DE ESTILO DE LA PAGINA//*/
+
+/*//--COLORES-PRINCIPALES-DE-LA-PAGINA--//*/
+.-Col-f1{
+  background-color: #221d23ff;
+}
+.-Col-f2{
+  background-color: #58355eff;
+}
+.-Col-f3{
+  background-color: #743e1fff;
+}
+.-Col-f4{
+  background-color: #f44708ff;
+}
+.-Col-f5{
+  background-color: #ffa400ff;
+}
+.-Col-f6{
+  background-color: #8ea604ff;
+}
+.-Col-f7{
+  background-color: #16bac5ff;
+}
+.-Col-f8{
+  background-color: #fbf2c0ff;
+}
+
+
+  /*//--UTILIZANDO-VARIABLES--//*/
+:root{
+  --col1: #221d23ff;
+  --col2: #58355eff;
+  --col3: #743e1fff;
+  --col4: #f44708ff;
+  --col5: #ffa400ff;
+  --col6: #8ea604ff;
+  --col7: #16bac5ff;
+  --col8: #fbf2c0ff;
+}
+
+/*/--MARGEN-PARA-LA-SECCION-QUE-ESTE-DEBAJO-DEL-MENU--/*/
+.-Menu-margen{
+  margin-top: 6vh;
+}
+
+
+/*//--PADDING-GENERAL-PARA-EL-CONTENEDOR--//*/
+.-Padd{
+  padding: 1rem;
+}
+.-Padd2{
+  padding: 2rem;
+}
+.-Padd3{
+  padding: 3rem;
+}
+.-Padd-img{
+  padding: 0.2rem;
+}
+
+
+
+/*/----MARGIN----//----MARGIN----//----MARGIN----//----MARGIN----/*/
+.-M-auto{
+  margin: auto;
+}
+
+
+
+/*----TEXTO-----*/
+/**COLOR DE TEXTO**/
+.-F-colorB{
+  color: #ffff;
+}
+.-F-colorN{
+  color: #0000;
+}
+/*/MEDIDAS DE FUENTES/*/
+.-F-size{
+  font-size: 1rem;
+}
+.-F-size2{
+  font-size: 2rem;
+}
+.-F-size3{
+  font-size: 3rem;
+}
+/*/----GROSOR DE TEXTO----/*/
+.-Bold-c{
+  font-weight: 100;
+}
+.-Bold-m{
+  font-weight: 400;
+}
+.-Bold-g{
+  font-weight: 700;
+}
+/*/ALINEACIONES DE TEXTO/*/
+.-Center{
+  text-align: center;
+}
+.-Justify{
+  text-align: justify;
+}
+/*/COLOR DE TEXTTO/*/
+.-Txt-col-b{
+  color: white;
+}
+.-Txt-col-n{
+  color: black;
+}
+
+
+
+/*//--TIPOS-DE-DISPLAY-//*/
+.-Grid{
+  display: grid;
+}
+.-Flex{
+  display: flex;
+}
+
+
+
+
+/*BORDER-RADIUS*/
+.-Borde{
+  border-radius: 2px;
+}
+.-Borde2{
+  border-radius: 8px;
+}
+
+
+
+.-Shadow{
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 10px 5px;
+}
+
+
+
+/*/----IMAGENES----/*/
+.-Img-w100{
+  width: 100%;
+}
+.-Img-w90{
+  width: 90%;
+}
+.-Img-w80{
+  width: 80%;
+}
+.-Img-w70{
+  width: 70%;
+}
+.-Img-w60{
+  width: 60%;
+}
+.-Img-w50{
+  width: 50%;
+}
+
+.-Img-borde{
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 0.3rem;
+}
+
+
+
+/*SUBTITULO*/
+.-Sub{
+  width: 100%;
+  height: 5rem;
+  max-height: auto;
+  margin: auto;
+  padding: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background-color: var(--col1);
+}
+
+
+
+/*----BOTONES----*/
+.-Btn-ver-mas{
+  padding: 0.2rem 1rem;
+  border: 1px solid var(--col1);
+  border-radius: 2px;
+  font-weight: bolder;
+  background-color: var(--col6);
+  color: black;
+}
+.-Btn-ver-mas:hover{
+  background-color: rgb(186, 219, 1);
+}

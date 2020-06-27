@@ -1,7 +1,7 @@
 extends layout
 block append config
 
-  -paginaActual = "subir"
+  -paginaActual = "Lagartos"
   block append
     link(rel="stylesheet", href="/styles/animales.css")
 
@@ -11,60 +11,129 @@ block main
   br
   div.contenedor
     for lagarto in animales
-      a.-borde.carta(href="/animal-info/"+lagarto.id)
+
+      a.carta.-Rad(href="/animal-info/"+lagarto.id)
         div
-          img.animal-img(src=lagarto.path, alt=lagarto.nombre)
+          img.animal-img.-Rad(src=lagarto.path, alt=lagarto.nombre)
           br
           br
           div.info
             p=lagarto.nombre
             p=lagarto.fases
-        div.-borde.opacidad
-          p.-boton VER MAS
+        div.opacidad.-Rad
+          p.-Btn.verMas VER MAS
 
 
     //NO DISPONIBLE
 
-    div.-borde.carta
+    div.carta.-Rad
           div
-            img.-borde.animal-img(src="/img/no-disponible/lagartos/p-red-hypo.png", alt="")
+            img.animal-img(src="/img/no-disponible/lagartos/p-red-hypo.png", alt="")
             br
             br
             div.info
-              p PITON BOLA
-              p SUPER RUSSO
-          div.-borde.opacidad
-            p.-boton.alerta FUERA DE STOCK
+              p POGONA 
+              p RED HYPO  
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
 
-    div.-borde.carta
+    div.carta.-Rad
           div
-            img.-borde.animal-img(src="/img/no-disponible/lagartos/p-zero.png", alt="")
+            img.animal-img(src="/img/no-disponible/lagartos/p-zero.png", alt="")
             br
             br
             div.info
-              p PITON BOLA
-              p SUPER RUSSO
-          div.-borde.opacidad
-            p.-boton.alerta FUERA DE STOCK
-    
-    div.-borde.carta
-          div
-            img.-borde.animal-img(src="/img/no-disponible/lagartos/i-azul.png", alt="")
-            br
-            br
-            div.info
-              p PITON BOLA
-              p SUPER RUSSO
-          div.-borde.opacidad
-            p.-boton.alerta FUERA DE STOCK
+              p POGONA 
+              p ZERO  
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
 
-    div.-borde.carta
+    div.carta.-Rad
           div
-            img.-borde.animal-img(src="/img/no-disponible/lagartos/gko-lechianus.png", alt="")
+            img.animal-img(src="/img/no-disponible/lagartos/p-leather.png", alt="")
             br
             br
             div.info
-              p PITON BOLA
-              p SUPER RUSSO
-          div.-borde.opacidad
-            p.-boton.alerta FUERA DE STOCK
+              p POGONA 
+              p LEATHERBACK  
+          div.opacidad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/p-trans.png", alt="")
+            br
+            br
+            div.info
+              p POGONA 
+              p TRANSLUCENT  
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/p-orange.png", alt="")
+            br
+            br
+            div.info
+              p POGONA 
+              p ORANGE LEATHERBACK  
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+
+    //CAMALEONES
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/camaleones.png", alt="")
+            br
+            br
+            div.info
+              p CAMALEONES DE VELO 
+              p JUVENILES  
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/c-parson.png", alt="")
+            br
+            br
+            div.info
+              p CAMALEONE DE PARSON 
+              p JUVENIL
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/c-pantera.png", alt="")
+            br
+            br
+            div.info
+              p CAMALEON PANTERA 
+              p JUVENIL
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/c-velo-adulto.png", alt="")
+            br
+            br
+            div.info
+              p CAMALEON DE VELO 
+              p ADULTO
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK
+
+    div.carta.-Rad
+          div
+            img.animal-img(src="/img/no-disponible/lagartos/c-velo-pied.png", alt="")
+            br
+            br
+            div.info
+              p CAMALEON DE VELO 
+              p PIED
+          div.opacidad.-Rad
+            p.-Btn.alerta FUERA DE STOCK

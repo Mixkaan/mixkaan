@@ -21,9 +21,11 @@
 .contenedor{
     width: 100%;
     height: auto;
-    padding: 2rem;
     background-image: url(/img/fondo/fondo-4.png);
     background-size: cover;
+}
+.contenedor a{
+    padding: 2rem;
 }
 .ani-todos{
     width: 100%;

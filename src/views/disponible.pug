@@ -1,15 +1,14 @@
 extends ../views/layout
 block append config
 
-  -paginaActual = "subir"
+  -paginaActual = "disponible"
   block append
     link(rel="stylesheet", href="/styles/disponible.css")
 
 block main
 
   br
-  div.subtitulo DISPONIBLES
-  div.contenedor
+  section.contenedor.-Menu-margen.-Padd2
 
     a(href="/lagartos")
       div.ani-todos.-Borde

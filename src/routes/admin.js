@@ -69,7 +69,6 @@ router.post('/subir_preventa', async(req, res) => {
   preventa.fases =req.body.fases;
   preventa.precio =req.body.precio;
   preventa.seccion =req.body.seccion;
-  preventa.subseccion =req.body.subseccion;
 
   preventa.filename =req.file.filename;
   preventa.path = '/img/uploads/' + req.file.filename;

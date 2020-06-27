@@ -19,17 +19,7 @@
   text-decoration: none;
   list-style: none;
   color: var(--colorb);
-}
-p{
-  font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-}
-/*----------PRESETS----------PRESETS----------PRESETS----------*/
-.-borde{
-  border-radius: 0.2rem;
-}
-.-padding{
-  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 

@@ -3,7 +3,7 @@ block append config
 
   -paginaActual = "Inicio"
   block append
-    link(rel="stylesheet", href="/styles/index.css")
+    link(rel="stylesheet", href="/stylesheets/index.scss")
 
 block main
 
@@ -77,42 +77,41 @@ block main
       h2 LAS IGUANAS ¿EN PELIGRO DE EXTINSIÓN?
       br
       br
-      div.-Img-borde.-Img-w80.-M-auto.-Borde
-        div.cont_img_1.-Borde
-      p.-Padd2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
+      img.cont_img_1(src="/img/blog/iguana.jpg", alt="").-Img-borde.-Borde.-Shadow
+      br
+      p.-Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
         |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
         |ipsam, ut consectetur quia natus, amet accusantium aperiam voluptates 
         |libero!Possimus mollitia eveniet similique placeat quos sint unde 
         |veniam aliquid deserunt recusandae repudiandae voluptas quia corporis 
         |ab dolore eligendi animi doloremque reiciendis, saepe perspiciatis? 
         |Corrupti dolores rem odio voluptate aperiam?
-
-      a.-Btn-ver-mas(href="") ver mas
+      br
+      a.-Btn-1(href="") ver mas
 
     div.cont_2.-Borde.-Padd.-Center.-Shadow.-Col-f8
       h2 DRAGON BARBUDO... TODO LO QUE NECESITAS SABER
       br
-      div.-Img-borde.-Img-w80.-M-auto.-Borde
-        div.cont_img_2.-Borde
-      p.-Padd2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
+      img.cont_img_2(src="/img/fichas-de-cuidado/pogona.jpg", alt="").-Img-borde.-Borde.-Shadow
+      br
+      p.-Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
         |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
-
-
-      a.-Btn-ver-mas(href="") ver mas
+      br
+      a.-Btn-1(href="") ver mas
 
 
 
   //----XQ-NOSOTROS----//
   div.-Sub ¿PORQUE NOSOTROS?
-  //section.-Padd.-Col-f2
+  section.-Padd.-Col-f2
 
     div.-Col-f8.-Borde.-Padd2.-Shadow
       h2.-F-size2.-Center ¡PORQUE SI!
       br
       br
-      div.intro.-Grid
-        img.intro-img1.-Borde(src="/img/blog/iguana.jpg", alt="")
-        div.intro-txt.-Justify.-M-auto
+      div.intro.-grid
+        img.xq_img(src="/img/blog/iguana.jpg", alt="").-Img-borde.-Borde.-M-auto.-Shadow
+        idv.cont-intro-txt.-Justify
           p Mixkaan exotics es la mejor opcion para adquiris tus bichos.
             |Nuestro amor y pasion por la vida silvestre te garantiza el mejor 
             |de los servicios.

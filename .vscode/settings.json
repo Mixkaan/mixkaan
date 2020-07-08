@@ -2,6 +2,7 @@
   "cSpell.enabled": true,
   "cSpell.language": "es",
   "cSpell.enableFiletypes": [
+    "!css",
     "!jade"
   ]
 }

@@ -29,9 +29,9 @@
 }
 .ani-todos{
     width: 100%;
-    height: 10rem;
+    height: auto;
     border-radius: 4px;
-    background-size: 105%;
+    background-size: cover;
     background-position: 40% 0%;
     background-image: url(/img/disponible/todos-los-ejemplares.png);
 }
@@ -65,6 +65,10 @@
 @media screen and (min-width: 800px) {
     .contenedor h2{
         text-align: left;
+    }
+    .ani-todos{
+        width: 100%;
+        height: 10rem;
     }
     .lagartos{
         background-size: auto;

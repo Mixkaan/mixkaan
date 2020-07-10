@@ -9,33 +9,32 @@ block main
 
   br
   //CONTENEDOR-LOGO
-  div.logo-contenedor
-    div.parte1
-      img.logo(src="/img/logo.png", alt="unico reptiles")
-    div.parte2
-      div.titulo
-        h1 ÚNICO REPTILES
-        h2 se diferente, sé original ...
+  div.logo_contenedor.-Menu-margen.-Padd3.-Flex
+    
+    img.logo_img(src="/img/logo.png", alt="unico reptiles")
+    div.logo_titulo
+      h1.-F-size3 ÚNICO REPTILES
+      h2 se diferente, sé original ...
 
+      br
+      br
       //FACEBOOK-SDK
       <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v6.0"></script>
-      div.facebook
-        div.fb-page(data-href='https://www.facebook.com/unicoreptiles/' data-width='400' data-height='100'  data-hide-cover='false' data-tabs="timeline,events,messages" data-show-facepile='true')  
-      br
-      br
-      br
-  
-  //
-  div.subtitulo MIRA NUESTRO CONTENIDO ORIGINAL DE YOUTUBE
-  div.-padding.youtube-contenedor
+        div.facebook
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0" nonce="wrih9SA4"></script>
+          <div class="fb-page" data-href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" data-tabs="timeline" data-width="" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/">Único Sangre Fría</a></blockquote></div>
+
+
+  //YOUTUBE----YOUTUBE----YOUTUBE----YOTUTUBE
+  div.-Sub MIRA NUESTRO CONTENIDO ORIGINAL DE YOUTUBE
+  div.youtube-contenedor.-Padd3
     br
     p Suscribete a nuestro canal, activa la campanita de notificaciones
       | y no te pierdas de nuestros videos y promociones que tenemmos para ti!
     br
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EcqIx2BQ_yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     //CRUPO-UNICO
-  div.subtitulo GRUPO UNICO
+  div.-Sub GRUPO UNICO
   div.unico-xaman
     a(href="")
       img(src="/icon/whatsapp.png", alt="")
@@ -48,7 +47,7 @@ block main
 
   //NOSOTROS
   a(name="nosotros")
-  div.subtitulo NOSOTROS
+  div.-Sub NOSOTROS
   div.nosotros
     div.nosotros-contenedor
       p ÚNICO REPTILES es una comercializadora y PIMVS avalada anteSEMARNAT, 
@@ -77,9 +76,7 @@ block main
        | ti como para tu reptil, asi como asesoramiento depor vida y los 
        | mejores precios.
       br
-      br
-      br
-      br
+
 
   block footer
 

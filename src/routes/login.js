@@ -4,7 +4,7 @@ const router = Router()
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const PassprtLocal = require('passport-local').Strategy;
+const PassportLocal = require('passport-local').Strategy;
 
 
 
@@ -18,9 +18,9 @@ router.use(session({
 }));
 router.use(passport.initialize());
 router.use(passport.session());
-passport.use(new PassprtLocal(function(
+passport.use(new PassportLocal(function(
   username, password, done) {
-  if(username === 'UnicoReptiles' && password === 'UnicoReptiles123')
+  if(username === 'Unicoreptiles' && password === 'Unicoreptiles123')
     return done(null,{id: 1, name: 'Leo'});
   done(null, false);
 }));
@@ -31,10 +31,10 @@ passport.deserializeUser(function(id, done) {
   done(null, {id: 1, name: 'Leo'})
 });
 
-
 router.get('/login', (req, res) => {
   res.render('login')
 });
+
 
 router.post('/login', passport.authenticate('local',{
   successRedirect: '/admin',
@@ -43,11 +43,7 @@ router.post('/login', passport.authenticate('local',{
 
 
 
-
-
-
-
-//INDEX-PAGINA-PRINCIPAL
+/* //INDEX-PAGINA-PRINCIPAL
 router.get('/login', (req, res) => {
   res.render('login')
 });
@@ -56,6 +52,5 @@ router.post('/login', passport.authenticate({
   successRedirect: '/admin',
   failureRedirect: '/login',
 }));
-
-
+ */
 module.exports = router;

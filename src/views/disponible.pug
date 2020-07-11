@@ -1,0 +1,32 @@
+extends ../views/layout
+block append config
+
+  -paginaActual = "disponible"
+  block append
+    link(rel="stylesheet", href="/styles/disponible.css")
+
+block main
+
+  br
+  section.contenedor.-Menu-margen.-Padd2
+
+    a(href="/lagartos")
+      div.ani-todos.-Borde
+        h2 TODOS LOS EJEMPLARES
+    br
+
+    a(href="/lagartos")
+      div.lagartos.-Borde
+        h2 LAGARTOS
+    br
+    
+
+    a(href="/serpientes")
+      div.serpientes.-Borde
+        h2 SERPIENTES
+    br
+
+    a(href="/tortugas")
+      div.tortugas.-Borde
+        h2 TORTUGAS
+    br

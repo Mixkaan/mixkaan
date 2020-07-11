@@ -8,7 +8,6 @@ const animalSchema = new Schema({
     sexo: {type: String},
     edad: {type: String},
     seccion: {type: String},
-    subseccion: {type: String},
     
     filename: {type: String},
     path: {type: String},

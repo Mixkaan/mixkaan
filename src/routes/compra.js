@@ -13,4 +13,10 @@ router.get('/comprar/:id', async(req, res) => {
 
 });
 
+
+//EL-METODO-DE-COMPRE ESTA-EN LA VISTA
+
+
+//FINALIZAR-LA-COMPRA-Y-ELIMINAR-EL-(PRODUCTO/ANIMAL)
+
 module.exports = router;

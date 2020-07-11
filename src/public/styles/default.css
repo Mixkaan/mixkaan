@@ -3,9 +3,29 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+<<<<<<< HEAD
   text-decoration: none;
   font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif; }
+=======
+  color: var(--colorb);
+  font-family: 'Poppins', sans-serif;
+}
+P{
+  font-size: 1.1rem;
+}
+
+
+.-input{
+  color: var(--colorn);
+}
+.-boton{
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  font-weight: bolder;
+}
+>>>>>>> 147ed1529ecacc575b91a45b58d2a67ad68e9ec8
 
 a {
   color: black; }
@@ -27,9 +47,16 @@ nav {
 .navbar-links {
   width: 60%;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-around; }
 
 .navbar-links a {
+=======
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar-links a{
+>>>>>>> 147ed1529ecacc575b91a45b58d2a67ad68e9ec8
   font-size: 1rem;
   font-weight: bold;
   transition: all 0.4s; }

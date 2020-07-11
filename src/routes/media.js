@@ -3,7 +3,12 @@ const router = Router()
 
 //INICIO-PAGINA-PRINCIPAL
 router.get('/media', (req, res) => {
-  res.render('media')
+  res.render('media/media')
+});
+
+//MORPH CALCULATOR
+router.get('/morph-calculator', (req,res) => {
+  res.render('media/morph-calculator')
 });
 
 

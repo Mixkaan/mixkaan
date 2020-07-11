@@ -15,6 +15,13 @@ require('./database');
 //CONFIGS
 app.set('port', process.env.PORT || 7000);
 app.set('views', path.join(__dirname, 'views'));
+//CONFOG CARPETAS DENTRO DE VIEWS
+
+//MEDIA
+app.set('media', path.join(__dirname, 'views/media'));
+app.set('view engine', 'pug');
+//DISPONIBLE
+app.set('disponible', path.join(__dirname, 'views/disponible'));
 app.set('view engine', 'pug');
 
 //SASS-MIDDLEWARE
@@ -39,13 +46,11 @@ app.use(multer({
 }).single('imagen'));
 
 
-//VARIABLES GLOBALES
-
 
 //RUTAS
 app.use(require('./routes/inicio'));
 app.use(require('./routes/media'));
-//app.use(require('./routes/disponibles'));
+app.use(require('./routes/disponibles'));
 //app.use(require('./routes/preventas'));
 //app.use(require('./routes/contactanos'));
 

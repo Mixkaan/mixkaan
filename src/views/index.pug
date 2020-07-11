@@ -3,65 +3,66 @@ block append config
 
   -paginaActual = "Inicio"
   block append
-    link(rel="stylesheet", href="/stylesheets/index.scss")
+    link(rel="stylesheet", href="/styles/index.css")
 
 block main
 
   br
-  section.inicio-bann.-Menu-margen.-Grid.-Padd2.-Center
+  section.inicio_bann.-Menu-margen.-Grid.-Padd3.-Center
+  
     div
-      img.logo-img(src="/img/logo/mixkaan.png", alt="")
+      img.logo-img(src="/img/logo/mixkaan.png", alt="" loading="lazy")
     div
-      img.logo-txt(src="/img/logo/mixkaan-letr-b.png", alt="")
+      img.logo-txt(src="/img/logo/mixkaan-letr-b.png", alt="" loading="lazy")
 
 
 
   //SECCION-CONTACTOS----SECCION-CONTACTOS----SECCION-CONTACTOS----
   section.contacto.-Col-f2.-Padd.-Grid
 
-    div.red.-Col-f8.-Padd.-Borde.-Shadow
-        h3 FACEBOOK
-        h4 Mixkaan exótics
-        a(href=""): span: img(src="/icon/facebook.png", alt="")
+    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
+      h3 FACEBOOK
+      h4 Mixkaan exótics
+      span: img(src="/icon/facebook.png", alt="" loading="lazy")
 
-    div.red.-Col-f8.-Padd.-Borde.-Shadow
+    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
       h3 INSTAGRAM
       h4 Mixkaan exótics
-      a(href=""): span: img(src="/icon/instagram.png", alt="")
+      span: img(src="/icon/instagram.png", alt="" loading="lazy")
 
-    div.red.-Col-f8.-Padd.-Borde.-Shadow
+    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
       h3 WHATSAPP
       h4 +52 133 289 911 83
-      a(href=""): span: img(src="/icon/whatsapp.png", alt="")
+      span: img(src="/icon/whatsapp.png", alt="" loading="lazy")
 
 
   //----CATEGORIAS----//
   div.-Sub 
-  section.categorias.-Flex.-Padd2
+  section.categorias.-Flex.-Padd2.-Col-grad-f45
 
     div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
       br
       br
       hr
       h3 DISPONIBLE
 
     div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
       br
       br
       hr
       h3 COLECCION
 
     div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
       br
       br
       hr
       h3 ACCSESORIOS
 
     div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="")
+      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
       br
       br
       hr
@@ -87,7 +88,7 @@ block main
         |ab dolore eligendi animi doloremque reiciendis, saepe perspiciatis? 
         |Corrupti dolores rem odio voluptate aperiam?
       br
-      a.-Btn-1(href="") ver mas
+      a.-Btn1(href="") ver mas
 
     div.cont_2.-Borde.-Padd.-Center.-Shadow.-Col-f8
       h2 DRAGON BARBUDO... TODO LO QUE NECESITAS SABER
@@ -97,7 +98,7 @@ block main
       p.-Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
         |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
       br
-      a.-Btn-1(href="") ver mas
+      a.-Btn1(href="") ver mas
 
 
 
@@ -123,8 +124,6 @@ block main
           br
           p Asi que cada que compras un bichos con nosotros, adquieres calidad 
             |y amor mixkaan &#x1F40D; &#x1F499;
-
-
 
 
 

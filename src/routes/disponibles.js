@@ -4,9 +4,9 @@ const router = Router()
 const Animal = require('../models/Animal');
 
 //TODOS-DISPONIBLES
-router.get('/todos_ejemplares', async(req, res) => {
+router.get('/disponible', async(req, res) => {
   const animales = await Animal.find();
-  res.render('disp_todos.pug', {animales});
+  res.render('disponible/disponible', {animales});
 });
 
 

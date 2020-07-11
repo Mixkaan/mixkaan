@@ -1,0 +1,13 @@
+.filtro {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: grey; }
+  .filtro .contenedor {
+    width: 20vw;
+    height: auto;
+    transition: all 1s; }
+  .filtro .contenedor:hover {
+    cursor: pointer;
+    transform: rotate(90deg); }
+
+/*# sourceMappingURL=disponible.css.map */

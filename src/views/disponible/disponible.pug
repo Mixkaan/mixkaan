@@ -1,0 +1,16 @@
+extends ../layout
+block append config
+
+  -paginaActual = "Disponible"
+  block append
+    link(rel="stylesheet", href="/styles/disponible.css")
+
+block main
+  br
+  section.filtro.-Menu-margen.-Flex.-Padd
+    img(src="/img/disponible/hexagono.svg", alt="").contenedor.lagartos
+    img(src="/img/disponible/hexagono.svg", alt="").contenedor.serpientes
+    img(src="/img/disponible/hexagono.svg", alt="").contenedor.tortugas
+
+  div.-Sub DISPONILES
+  section

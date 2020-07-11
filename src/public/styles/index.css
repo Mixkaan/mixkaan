@@ -1,22 +1,25 @@
 /*-----LOGO-CONTENEDOR-----*/
-.logo_contenedor{
+.banner{
   justify-content: center;
   flex-wrap: wrap;
   background-image: url(/img/fondo/fondo-4.png);
-  background-size: cover;
+  background-size: auto;
 }
-.logo_img{
-  width: 100%;
-  height: 200%;
+.banner__img{
+  width: 80%;
+  height: 160%;
 }
-.logo_titulo{
+.banner__txt{
   width: 80%;
   height: auto;
   text-align: center;
 }
 .facebook{
-  width: 50%;
-  margin-left: 20%;
+  width: 100%;
+  justify-content: center;
+}
+.fd-page{
+  width: 100%;
 }
 
 /*-----SECCION-YOUTUBE-----*/
@@ -28,19 +31,18 @@
   background-color: var(--color1);
 }
 iframe{
-  width: 70%;
+  width: 100%;
   height: 50%;
   margin: 20% auto;
 }
 
 
 /*-----UNICO-X-XAMAN-----*/
-.unico-xaman{
+.unico-grupo{
   color: var(--colorb);
   width: 100%;
   height: auto;
   margin: auto;
-  padding: 2.4rem 2rem;
   text-align: center;
   justify-content: center;
   background-image: url(/img/fondo/fondo-1.png);
@@ -65,7 +67,6 @@ iframe{
   background-color: var(--color1);
 }
 .nosotros-contenedor{
-  padding: 5rem 0.5rem;
   border: 5px solid var(--color3);
   border-radius: 4px;
 }
@@ -74,16 +75,17 @@ iframe{
 
 @media(min-width: 800px){
   /*-----LOGO-CONTENEDOR-----*/
-  .logo_contenedor{
+  .banner{
     justify-content: space-around;
   }
-  .logo_img{
+  .banner__img{
     width: 30%;
     height: 60%;
   }
-  .logo_titulo{
+  .banner__txt{
     width: 40%;
     height: auto;
+    margin-top: 6%;
   }
   .facebook{
     width: 50%;

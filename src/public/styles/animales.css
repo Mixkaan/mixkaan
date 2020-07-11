@@ -54,7 +54,7 @@ body{
   background-color: var(--c3);
 }
 .carta:hover .opacidad{
-  margin: -23.2% -10px;
+  margin: -19.5rem -10px;
   transition: all 0.3s;
   opacity: 1;
 }

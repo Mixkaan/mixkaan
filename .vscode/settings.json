@@ -3,6 +3,7 @@
   "cSpell.language": "es",
   "cSpell.enableFiletypes": [
     "!css",
-    "!jade"
+    "!jade",
+    "!javascript"
   ]
 }

@@ -3,215 +3,111 @@ block append config
 
   -paginaActual = "Inicio"
   block append
-    link(rel="stylesheet", href="/styles/index.css")
+    link(rel="stylesheet", href="/styles/inicio/index.css")
 
 block main
-
   br
-<<<<<<< HEAD
-  section.inicio_bann.-Menu-margen.-Grid.-Padd3.-Center
-  
-    div
-      img.logo-img(src="/img/logo/mixkaan.png", alt="" loading="lazy")
-    div
-      img.logo-txt(src="/img/logo/mixkaan-letr-b.png", alt="" loading="lazy")
+  //INICIO-BANN
+  section.bann.-Menu-margen.-Grid.-Padd2.-Parallax
+    img(src="/img/logo.png", alt="").bann__logo._.WOW.animate__animated.animate__fadeInDownBig
+    div.bann__txt.-Center._.WOW.animate__animated.animate__bounce.animate__fadeIn
+      h1 ÚNICO REPTILES
+      H3 Sé diferente, sé original...
 
 
-
-  //SECCION-CONTACTOS----SECCION-CONTACTOS----SECCION-CONTACTOS----
-  section.contacto.-Col-f2.-Padd.-Grid
-
-    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
-      h3 FACEBOOK
-      h4 Mixkaan exótics
-      span: img(src="/icon/facebook.png", alt="" loading="lazy")
-
-    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
-      h3 INSTAGRAM
-      h4 Mixkaan exótics
-      span: img(src="/icon/instagram.png", alt="" loading="lazy")
-
-    a(href="").red.-Col-f8.-Padd.-Borde.-Shadow.-Delay
-      h3 WHATSAPP
-      h4 +52 133 289 911 83
-      span: img(src="/icon/whatsapp.png", alt="" loading="lazy")
-
-
-  //----CATEGORIAS----//
-  div.-Sub 
-  section.categorias.-Flex.-Padd2.-Col-grad-f45
-
-    div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
-      br
-      br
-      hr
-      h3 DISPONIBLE
-
-    div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
-      br
-      br
-      hr
-      h3 COLECCION
-
-    div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
-      br
-      br
-      hr
-      h3 ACCSESORIOS
-
-    div.categoria.-Center
-      a(href=""): img.-B-Circulo.-Padd.-Shadow(src="/icon/facebook.png", alt="" loading="lazy")
-      br
-      br
-      hr
-      h3 NUESTRO BLOG
-
-
-
-  //----BLOG-DESTACADOS----//
-  div.-Sub LO MAS DESTACADO
-  section.blog.-Grid.-Padd3.-Col-f3
-
-    div.cont_1.-Borde.-Padd.-Center.-Shadow.-Col-f8
-      h2 LAS IGUANAS ¿EN PELIGRO DE EXTINSIÓN?
-      br
-      br
-      img.cont_img_1(src="/img/blog/iguana.jpg", alt="").-Img-borde.-Borde.-Shadow
-      br
-      p.-Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
-        |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
-        |ipsam, ut consectetur quia natus, amet accusantium aperiam voluptates 
-        |libero!Possimus mollitia eveniet similique placeat quos sint unde 
-        |veniam aliquid deserunt recusandae repudiandae voluptas quia corporis 
-        |ab dolore eligendi animi doloremque reiciendis, saepe perspiciatis? 
-        |Corrupti dolores rem odio voluptate aperiam?
-      br
-      a.-Btn1(href="") ver mas
-
-    div.cont_2.-Borde.-Padd.-Center.-Shadow.-Col-f8
-      h2 DRAGON BARBUDO... TODO LO QUE NECESITAS SABER
-      br
-      img.cont_img_2(src="/img/fichas-de-cuidado/pogona.jpg", alt="").-Img-borde.-Borde.-Shadow
-      br
-      p.-Justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem 
-        |architecto rerum ipsa veritatis minima id harum vel eveniet sunt 
-      br
-      a.-Btn1(href="") ver mas
-
-
-
-  //----XQ-NOSOTROS----//
-  div.-Sub ¿PORQUE NOSOTROS?
-  section.-Padd.-Col-f2
-
-    div.-Col-f8.-Borde.-Padd2.-Shadow
-      h2.-F-size2.-Center ¡PORQUE SI!
-      br
-      br
-      div.intro.-grid
-        img.xq_img(src="/img/blog/iguana.jpg", alt="").-Img-borde.-Borde.-M-auto.-Shadow
-        idv.cont-intro-txt.-Justify
-          p Mixkaan exotics es la mejor opcion para adquiris tus bichos.
-            |Nuestro amor y pasion por la vida silvestre te garantiza el mejor 
-            |de los servicios.
-          br
-          p Cada animal adquirido por nosotros pasan por una cuarentena para 
-            |garantizar su buen estado de salud, ademas de una buena alimentacion. 
-            |De esta manera cada bicho disponible asegura una buena epexiencias para 
-            |todos nuestros clientes.
-          br
-          p Asi que cada que compras un bichos con nosotros, adquieres calidad 
-            |y amor mixkaan &#x1F40D; &#x1F499;
-
-
-
-
-
-
-
-  //div.popup(onClick="popUp()") click
-    span.popuptexto#Popup oliwis
-  //Con este trozo de codigo puedo invocar un pop-up
-  //
-  //
-  //Y con este llamar a la funcion de codigo JS
-
-=======
-  //CONTENEDOR-LOGO
-  div.banner.-Menu-margen.-Flex.-Padd3
-    
-    img.banner__img(src="/img/logo.png", alt="unico reptiles")
-    div.banner__txt
-      h1.-F-size3 ÚNICO REPTILES
-      h2 se diferente, sé original ...
-
-      //FACEBOOK-SDK
+  //PERFIL-FACEBOOK
+  section.face-perfil.-Padd.-Flex
+    div.face-perfil__plugin
+      //-SCRIPT
       <div id="fb-root"></div>
-        div.facebook
-          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0" nonce="wrih9SA4"></script>
-          <div class="fb-page" data-href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" data-tabs="timeline" data-width="" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/">Único Sangre Fría</a></blockquote></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0" nonce="48LZNwxO"></script>
+      //-PLUGIN
+      <div class="fb-page -Borde -Shadow" data-href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" data-tabs="timeline" data-max-width="500" data-width="300" data-height="120" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#xda;nico-Sangre-Fr&#xed;a-2247381735278065/">Único Sangre Fría</a></blockquote></div>
+
+    div.face-perfil__txt
+      h3.-Center @Único Sangre Fría
+      <div class="fb-like like" data-href="https://www.facebook.com/%C3%9Anico-Sangre-Fr%C3%ADa-2247381735278065/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
 
 
-  //YOUTUBE----YOUTUBE----YOUTUBE----YOTUTUBE
-  div.-Sub MIRA NUESTRO CONTENIDO ORIGINAL DE YOUTUBE
-  div.youtube-contenedor.-Padd
-    br
-    p.-Padd2 Suscribete a nuestro canal, activa la campanita de notificaciones
-      | y no te pierdas de nuestros videos y promociones que tenemmos para ti!
+  //INSTAGRAM
+  div.-Sub  INSTAGRAM
+  section.instagram-plugin.-Padd3.-Parallax
+    script(src='https://apps.elfsight.com/p/platform.js' defer='')
+    div.pluggin.-ShadowRad._.WOW.animate__animated.animate__fadeInRight
+      div.elfsight-app-cf40f51b-f181-4d58-b3ee-af31b8877e2a
+
+
+  //DESTACADO
+  div.-Sub LO MAS NUEVO
+  section.destacado
+    div.destacado__animales.-Flex
+      -for(var i = 0; i <=2; i++)
+        a.carta.-Rad.-Shadow._.WOW.animate__animated.animate__rotateInDownRight(href="/animal-info/"+animales[i].id)
+          div
+            img.animal-img.-Rad(src=animales[i].path, alt=animales[i].nombre)
+            br  
+            br
+            div.info
+              p=animales[i].nombre
+              p=animales[i].fases
+          div.opacidad.-Rad
+            p VER MAS
+
+
+  //YOUTUBE
+  div.-Sub YOUTUBE
+  section.youtube.-Padd3.-Parallax
+    div.youtube__txt
+      p.-Center Mira nuestro contenido exclusivo de You Tube, activa la campanita de notificaciones
+        | y no te pierdas nuestros videos
+    <iframe class="youtube__plugin -Borde -Shadow _ WOW animate__animated animate__backInLeft" src="https://www.youtube.com/embed/EcqIx2BQ_yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  //WHATSAPP
+  div.-Sub GRUPO ÚNICO
+  section.grupo-whats.-Grid.-Padd
+    div.grupo-whats__txt
+      h4 Únete a nuestro grupo de whats y descubre nuestras 
+        |promociones.
+      br
+      h4 Comercializadoras y criadores , es tu oportunidad de crecer 
+        |con nosotros, únete!!
+
     
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/EcqIx2BQ_yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    //CRUPO-UNICO
-  div.-Sub GRUPO UNICO
-  div.unico-grupo.-Padd
-    a(href="")
-      img(src="/icon/whatsapp.png", alt="")
-    br
-    br
-    br
-    h3 Unete a nuestro grupo de whatsapp!!
-    
-    p Unete dando click en el icono de arriba y aprovecha antes 
-      |que nadie lasofertas y bichos que tenemos por tiempo limitado 
-      |en la comunidad de UNICO REPTILES
+    img.grupo-whats__img._.WOW.animate__animated.animate__tada(src="/icon/whatsapp.png", alt="")
+
 
   //NOSOTROS
-  a(name="nosotros")
   div.-Sub NOSOTROS
-  div.nosotros
-    div.nosotros-contenedor.-Padd
-      p ÚNICO REPTILES es una comercializadora y PIMVS avalada anteSEMARNAT, 
-        |nuestra especialidad´se basa en la crianza de pogonas o dragón 
-        |barbudo, también conocido de ésta forma.
-      br
-      p Nosotros contamos con una extensa variedad de ejemplares 
-        |exóticostanto de reptiles como otros ejemplares. Contamos con 
-        |un estándar de calidad riguroso para nuestros especímenes y 
-        |obviamente, para traerte lo mejor que ofrece el mercado. Ademas 
-        |de esto, utilizamos siempre la mejor alimentacion y ofrecemos el 
-        |mejor servicio y asesoría para tu mayor satisfación.
-      br
-      p Tras nuestro proyecto como ÚNICO REPTILES, hay detrás más de 5 
-        |años que nos respaldan, los cuales hay práctica, sabiduria, 
-        |experiencia el mejor servicio al cliente y el mejor 
-        |posicionamiento en el mercado actual, siendo nosotros tu mejor 
-        |opción, a nivel nacional e internacional.
-      br
-      p Nosotros contamos con productos tanto nacionales como exportaciones 
-        |internacionales principalmente de U.S.A y Europa. Contamos con 
-        |génitca y linajes de criaderos extranjeros de prestigio. Contamos 
-        |con envíos a toda parte de la republica y países aledaños, siempre 
-        |con un buen control y manejo de envios aéreo.
-      p De nuestra parte te garantizamos el mejor trato y servicio tanto para 
-        |ti como para tu reptil, asi como asesoramiento depor vida y los 
-        |mejores precios.
-      br
+  section.nosotros.-Padd3.-Parallax
+    div.nosotros__txt.-Borde.-Shadow._.WOW.animate__animated.animate__fadeIn
+      div.-Padd2.-Justify
+        p ÚNICO REPTILES es una comercializadora y PIMVS avalada ante SEMARNAT, 
+          |nuestra especialidad se basa en la crianza de dragón barbudo ademas 
+          |de otras mas variadas especies 
+        br
+        p Nosotros contamos con una extensa variedad de ejemplares 
+          |exóticostanto de reptiles como otros ejemplares. Contamos con 
+          |un estándar de calidad riguroso para nuestros especímenes y 
+          |obviamente, para traerte lo mejor que ofrece el mercado. Ademas 
+          |de esto, utilizamos siempre la mejor alimentacion y ofrecemos el 
+          |mejor servicio y asesoría para tu mayor satisfación.
+        br
+        p Tras nuestro proyecto como ÚNICO REPTILES, hay detrás más de 5 
+          |años que nos respaldan, los cuales hay práctica, sabiduria, 
+          |experiencia el mejor servicio al cliente y el mejor 
+          |posicionamiento en el mercado actual, siendo nosotros tu mejor 
+          |opción, a nivel nacional e internacional.
+        br
+        p Nosotros contamos con productos tanto nacionales como exportaciones 
+          |internacionales principalmente de U.S.A y Europa. Contamos con 
+          |génitca y linajes de criaderos extranjeros de prestigio. Contamos 
+          |con envíos a toda parte de la republica y países aledaños, siempre 
+          |con un buen control y manejo de envios aéreo.
+        p De nuestra parte te garantizamos el mejor trato y servicio tanto para 
+          |ti como para tu reptil, asi como asesoramiento depor vida y los 
+          |mejores precios.
+        br
 
 
-  block footer
->>>>>>> 147ed1529ecacc575b91a45b58d2a67ad68e9ec8
-
-  //SCRIPTS----SCRIPTS----SCRIPTS----
-  script(src="/javascript/pop-up.js")
+  script(src="/javascript/parallax.js")

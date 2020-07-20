@@ -1,14 +1,11 @@
 const {Schema, model} = require('mongoose');
 
-const animalSchema = new Schema({
+const productoSchema = new Schema({
     nombre: {type: String},
     descripcion: {type: String},
-    fases: {type: String},
     precio: {type: Number},
-    sexo: {type: String},
-    edad: {type: String},
-    seccion: {type: String},
-
+    categoria: {type: String},
+    
     filename: {type: String},
     path: {type: String},
     originalname: {type: String},
@@ -17,4 +14,4 @@ const animalSchema = new Schema({
     created_at: {type: Date, default: Date.now()},
 })
 
-module.exports = model('Animal', animalSchema);
+module.exports = model('Producto', productoSchema);

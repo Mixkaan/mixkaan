@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "media.css",
+	"file": "animales.css",
 	"sources": [
-		"media.scss"
+		"../sass/animales.sass"
 	],
 	"names": [],
 	"mappings": ""

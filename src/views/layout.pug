@@ -8,7 +8,7 @@ html(lang='es')
 
     link(rel="shortcut icon", href="/icon/logo-icono.ico", type="image/x-icon")
 
-    title Mixkaan | #{paginaActual}
+    title Único Reptiles | #{paginaActual}
 
 
     //CDN-J-QUERY
@@ -17,29 +17,46 @@ html(lang='es')
 
     //LISTA-DE-ESTILOS
 
+    //ANIMATE.CSS & WOW.JS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css")
+    script(src='/javascript/wow.min.js')
+    script.
+      new WOW().init();
+
+
+
     //LIB-CSS(PROPIA)
     link(rel="stylesheet", href="/styles/lib.css")
 
     link(rel="stylesheet", href="/styles/default.css")
 
-<<<<<<< HEAD
 
     //GOOGLE-FONTS
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
-=======
+
     link(rel="stylesheet", href="/styles/lib.css")
 
     //GOOGLE-FONTS
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
->>>>>>> 147ed1529ecacc575b91a45b58d2a67ad68e9ec8
+
     
     block append
-  body
+  body.-Hidden
+    //FACEBOOK PLUGINS
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0" nonce="48LZNwxO"></script>
+      
     include ./components/menu
+
+    include ./components/preloader
 
     block main
 
 
     include ./components/footer
+
+    script(src="/javascript/preloader.js")
+    script(src="/javascript/parallax.js")
+    script(src="/javascript/wow.min.js")
 

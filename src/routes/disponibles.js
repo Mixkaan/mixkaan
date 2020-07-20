@@ -11,9 +11,9 @@ router.get('/disponible', async(req, res) => {
 
 
 //DISPONIBLES-LAGARTOS
-router.get('/lagartos', async(req, res) => {
+router.get('/disponible/lagartos', async(req, res) => {
   const animales = await Animal.find({seccion:"lagartos"});
-  res.render('disp_lagartos', {animales});
+  res.render('disponible/lagartos', {animales});
 });
 
 

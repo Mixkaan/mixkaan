@@ -4,10 +4,10 @@ $(document).ready(function() {
         var barra = $(window).scrollTop();
         var posicion = barra * 0.50;
 
-        $('body').css({
+        $('.-Parallax').css({
             'background-position' : '0 -' + posicion + 'px'
         });
     });
 });
 
-script(src="/javascript/parallax.js")
+/* script(src="/javascript/parallax.js") */

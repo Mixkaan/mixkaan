@@ -1,11 +1,13 @@
 const { Router } = require('express');
 const router = Router()
 
-//INICIO-PAGINA-PRINCIPAL
-router.get('/', (req, res) => {
-  res.render('index')
-});
+const Animal = require('../models/Animal');
 
+//INICIO-PAGINA-PRINCIPAL
+router.get('/', async(req, res) => {
+  const animales = await Animal.find();
+  res.render('index', {animales});
+});
 
 
 module.exports = router;

@@ -26,10 +26,13 @@ app.set('view engine', 'pug');
 
 //SASS-MIDDLEWARE
 app.use(require('node-sass-middleware')({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
-  indentSyntax: true,
-  sourceMap: true
+  src: path.join(__dirname, 'public/sass'),
+  dest: path.join(__dirname, 'public/styles'),
+  outputStyle: 'compressed',
+  indentedSyntax: true, // true = .sass and false = .scss
+  sourceMap: true,
+  debug: true,
+  prefix: '/styles',
 }));
 
 //MIDDLEWARES

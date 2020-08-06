@@ -1,0 +1,74 @@
+@import ../colores
+  
+.alimento
+  background-image: url(/img/fondo/fondo-1.png)
+a
+  color: $colb
+  transition: all 0.5s
+a:hover
+  filter: brightness(40%)
+
+.seccion
+  height: 10rem
+  grid-template-columns: auto auto auto
+  column-gap: 1rem
+
+  h2
+    margin-top: 3rem
+    display: flex
+    font-size: 2rem
+    justify-content: center
+
+  h3
+    display: flex
+    justify-content: center
+
+  &__cucarachas
+    background-size: 100%
+    background-position: 100%
+    background-image: url(/img/productos/cucaracha.png)
+
+  &__grillo
+    background-size: 100%
+    background-position: 100%
+    background-image: url(/img/productos/grillo.png)
+  
+  &__raton
+    background-size: 100%
+    background-position: 100%
+    background-image: url(/img/productos/raton.png)
+
+
+.suplementos
+  background-image: url(/img/fondo/fondo-2.png)
+
+  &__contenedor
+    justify-content: space-around
+    flex-wrap: wrap
+
+.suplemento
+  width: 240px
+  height: 330px
+  text-align: center
+  background-color: $col2
+
+  &__img
+    width: 180px
+    height: 180px
+    min-height: 100px
+    
+  &__info
+    height: 3rem
+    margin-top: 1rem
+    color: $colb
+    background-color: $col4
+
+  &__mas
+    margin-bottom: 1rem
+    background-color: $col6
+
+.ver_mas
+  width: 30%
+  margin: auto
+  justify-content: center
+  background-color: $col8

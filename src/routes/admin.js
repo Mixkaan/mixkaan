@@ -4,7 +4,7 @@ const {unlink} = require('fs-extra');
 const path = require('path');
 
 
-const Preventa = require('../models/Preventa');
+const Producto = require('../models/Producto');
 const Animal = require('../models/Animal');
 
 
@@ -14,9 +14,9 @@ router.get('/admin', (req, res, next) => {
   if(req.isAuthenticated()) return next();
   res.redirect('/login')
 }, async(req, res) => {
-  const preventas = await Preventa.find();
+  const productos = await Producto.find();
   const animales = await Animal.find();
-  res.render('admin', {preventas, animales});
+  res.render('admin/admin', {productos, animales});
 });
 
 
@@ -26,15 +26,15 @@ router.get('/subir_animal', (req, res, next) => {
   if(req.isAuthenticated()) return next();
   res.redirect('/login')
 }, (req, res) => {
-  res.render('subir_animal')
+  res.render('admin/subir_animal')
 });
 
-//SUBIR-PREVENTA--------------------//
-router.get('/subir_preventa', (req, res, next) => {
+//SUBIR-PRODUCTO--------------------//
+router.get('/subir_producto', (req, res, next) => {
   if(req.isAuthenticated()) return next();
   res.redirect('/login')
 }, (req, res) => {
-  res.render('subir_preventa')
+  res.render('admin/subir_producto')
 });
 
 
@@ -61,22 +61,21 @@ router.post('/subir_animal', async(req, res) => {
   res.redirect('/admin');
 });
 
-//PROCESO-DE-SUBIDA/PREVENTA--------------------//
-router.post('/subir_preventa', async(req, res) => {
-  const preventa = new Preventa();
-  preventa.nombre =req.body.nombre;
-  preventa.descripcion =req.body.descripcion;
-  preventa.fases =req.body.fases;
-  preventa.precio =req.body.precio;
-  preventa.seccion =req.body.seccion;
+//PROCESO-DE-SUBIDA/PRODUCTO--------------------//
+router.post('/subir_producto', async(req, res) => {
+  const producto = new Producto();
+  producto.nombre =req.body.nombre;
+  producto.descripcion =req.body.descripcion;
+  producto.precio =req.body.precio;
+  producto.categoria =req.body.categoria;
 
-  preventa.filename =req.file.filename;
-  preventa.path = '/img/uploads/' + req.file.filename;
-  preventa.originalname =req.file.originalname;
-  preventa.mimetype =req.file.mimetype;
-  preventa.size =req.file.size;
+  producto.filename =req.file.filename;
+  producto.path = '/img/uploads/' + req.file.filename;
+  producto.originalname =req.file.originalname;
+  producto.mimetype =req.file.mimetype;
+  producto.size =req.file.size;
 
-  await preventa.save();
+  await producto.save();
   res.redirect('/admin');
 });
 
@@ -91,10 +90,10 @@ router.get('/animal/:id/eliminar', async(req, res) => {
 });
 
 //ELIMINAR-PREVENTA--------------------//
-router.get('/preventa/:id/eliminar', async(req, res) => {
+router.get('/producto/:id/eliminar', async(req, res) => {
   const {id} = req.params;
-  const preventa = await Preventa.findByIdAndDelete(id);
-  await unlink(path.resolve('./src/public' + preventa.path));
+  const producto = await Producto.findByIdAndDelete(id);
+  await unlink(path.resolve('./src/public' + producto.path));
   res.redirect('/admin');
 });
 

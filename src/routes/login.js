@@ -32,7 +32,7 @@ passport.deserializeUser(function(id, done) {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login')
+  res.render('admin/login')
 });
 
 

@@ -1,0 +1,72 @@
+extends ../layout
+block append config
+
+  -paginaActual = "Productos"
+  block append
+    link(rel="stylesheet", href="/styles/productos/productos.css")
+
+block main
+  br
+  section.alimento.-Menu-margen.-Padd2
+    div.-Sub ALIMENTO
+    br
+    div.seccion.-Grid
+      a(href="/productos/cucarachas").seccion__cucarachas.-Rad
+        h2 CUCARACHAS
+        h3 ver más
+      a(href="").seccion__grillo.-Rad
+        h2 GRILLOS
+        h3 ver más
+      a(href="").seccion__raton.-Rad
+        h2 RATONES
+        h3 ver más
+
+  div.-Sub
+  section.suplementos.-Padd2
+    div.-Sub SUPLEMENTOS
+    br
+    div.suplementos__contenedor.-Flex
+      -for(var i = 0; i <=3; i++)
+        div.suplemento.-Rad.-Padd
+          img(src="/img/disponible/lagartos.png", alt="").suplemento__img.-Rad
+          div.suplemento__info
+            p algo
+          br
+          a(href="").suplemento__mas.-Boton ver mas
+    br
+    br
+    a(href="").ver_mas.-Boton.-Flex ver mas productos
+
+
+  div.-Sub
+  section.suplementos.-Padd2
+    div.-Sub MANTENIMIENTO
+    br
+    div.suplementos__contenedor.-Flex
+      -for(var i = 0; i <=3; i++)
+        div.suplemento.-Rad.-Padd
+          img(src="/img/disponible/lagartos.png", alt="").suplemento__img.-Rad
+          div.suplemento__info
+            p algo
+          br
+          a(href="").suplemento__mas.-Boton ver mas
+    br
+    br
+    a(href="").ver_mas.-Boton.-Flex ver mas productos
+
+
+  div.-Sub
+  section.suplementos.-Padd2
+    div.-Sub MÁS
+    br
+    div.suplementos__contenedor.-Flex
+      -for( i = 0; i <=1; i++);
+          div.suplemento.-Rad.-Padd
+            img(src=productos[i].path alt="").suplemento__img.-Rad
+            div.suplemento__info
+              p=productos[i].descripcion
+            br
+            a(href="").suplemento__mas.-Boton ver mas
+    br
+    br
+    a(href="").ver_mas.-Boton.-Flex ver mas productos

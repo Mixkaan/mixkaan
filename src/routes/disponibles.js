@@ -18,34 +18,16 @@ router.get('/disponible/lagartos', async(req, res) => {
 
 
 //-----DISPONIBLES-SERPIENTES
-router.get('/serpientes', async(req, res) => {
+router.get('/disponible/serpientes', async(req, res) => {
   const animales = await Animal.find({seccion:"serpientes"});
-  res.render('disp_serpientes', {animales});
-});
-
-//SUB-SECCIONES-SERPIENTES//
-
-//-----PITONES
-router.get('/serpientes/pitones', async(req, res) => {
-  const animales = await Animal.find({subseccion:"pitones"});
-  res.render('disp_pitones', {animales});
-});
-//-----BOAS
-router.get('/serpientes/boas', async(req, res) => {
-  const animales = await Animal.find({subseccion:"boas"});
-  res.render('disp_boas', {animales});
-});
-//-----COLUBRIDOS
-router.get('/serpientes/colubridos', async(req, res) => {
-  const animales = await Animal.find({subseccion:"colubridos"});
-  res.render('disp_colubridos', {animales});
+  res.render('disponible/serpientes', {animales});
 });
 
 
 //DISPONIBLES-TORTUGAS
-router.get('/tortugas', async(req, res) => {
+router.get('/disponible/tortugas', async(req, res) => {
   const animales = await Animal.find({seccion:"tortugas"});
-  res.render('disp_tortugas', {animales});
+  res.render('disponible/tortugas', {animales});
 });
 
 
@@ -54,7 +36,7 @@ router.get('/tortugas', async(req, res) => {
 router.get('/animal-info/:id', async(req, res) => {
   const {id} = req.params;
   const animal = await Animal.findById(id);
-  res.render('animal-info', {animal});
+  res.render('disponible/animal-info', {animal});
 });
 
 

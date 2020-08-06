@@ -3,8 +3,9 @@ const {Schema, model} = require('mongoose');
 const preventaSchema = new Schema({
     nombre: {type: String},
     descripcion: {type: String},
-    fases: {type: String},
     precio: {type: Number},
+    seccion: {type: String},
+
     filename: {type: String},
     path: {type: String},
     originalname: {type: String},

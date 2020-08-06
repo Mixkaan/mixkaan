@@ -1,0 +1,31 @@
+extends ../layout
+block append config
+
+  -paginaActual = animal.nombre
+  block append
+    link(rel="stylesheet", href="/styles/disponible/animal-info.css")
+
+block main
+
+  br
+  section.animal.-Menu-margen.-Padd
+    br
+    br
+    div.carta.-Padd.-Flex.-Shadow
+      img.carta__img.-Borde(src=animal.path, alt="")
+      br
+      br
+      div.carta__info
+        h2.nombre=animal.nombre
+        br
+        h4.sub PRECIO
+        p=animal.precio
+        br
+        h4.sub FASES
+        h4=animal.fases
+        br
+        h4.sub  DESCRIPCIÓN
+        h4=animal.descripcion
+        br
+        br
+        a.compra.-Boton-mas(href="/comprar/"+animal.id) ¡COMPRAR AHORA!

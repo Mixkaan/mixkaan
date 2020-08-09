@@ -25,6 +25,7 @@ block main
             th ID
             th NOMBRE
             th DESCRIPCION
+            th seccion
             th IMAGEN
             th ACCIONES
         tbody.tabla__cuerpo
@@ -34,6 +35,7 @@ block main
               td= producto.id
               td= producto.nombre
               td= producto.descripcion
+              td= producto.seccion
               td
                 img(src=producto.path)
               td

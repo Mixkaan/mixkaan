@@ -33,6 +33,7 @@ app.use(require('node-sass-middleware')({
 //MIDDLEWARES
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 const storage = multer.diskStorage({
   destination: path.join(__dirname,'public/img/uploads'),
   filename: (req, file, cb, filename) => {
@@ -50,7 +51,7 @@ app.use(require('./routes/inicio'));
 app.use(require('./routes/media'));
 app.use(require('./routes/disponibles'));
 app.use(require('./routes/productos'));
-//app.use(require('./routes/contactanos'));
+app.use(require('./routes/contactanos'));
 
 app.use(require('./routes/compra'));
 

@@ -64,16 +64,16 @@ router.post('/subir_animal', async(req, res) => {
 //PROCESO-DE-SUBIDA/PRODUCTO--------------------//
 router.post('/subir_producto', async(req, res) => {
   const producto = new Producto();
-  producto.nombre =req.body.nombre;
-  producto.descripcion =req.body.descripcion;
-  producto.precio =req.body.precio;
-  producto.categoria =req.body.categoria;
+  producto.nombre = req.body.nombre;
+  producto.descripcion = req.body.descripcion;
+  producto.seccion = req.body.seccion;
+  producto.precio = req.body.precio;
 
-  producto.filename =req.file.filename;
+  producto.filename = req.file.filename;
   producto.path = '/img/uploads/' + req.file.filename;
-  producto.originalname =req.file.originalname;
-  producto.mimetype =req.file.mimetype;
-  producto.size =req.file.size;
+  producto.originalname = req.file.originalname;
+  producto.mimetype = req.file.mimetype;
+  producto.size = req.file.size;
 
   await producto.save();
   res.redirect('/admin');

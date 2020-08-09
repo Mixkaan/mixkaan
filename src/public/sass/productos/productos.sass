@@ -1,74 +1,45 @@
 @import ../colores
   
-.alimento
-  background-image: url(/img/fondo/fondo-1.png)
-a
-  color: $colb
-  transition: all 0.5s
-a:hover
-  filter: brightness(40%)
+.contenedor
+  background-image: url(/img/fondo/fondo-4.png)
 
-.seccion
-  height: 10rem
-  grid-template-columns: auto auto auto
-  column-gap: 1rem
-
-  h2
-    margin-top: 3rem
-    display: flex
-    font-size: 2rem
-    justify-content: center
-
-  h3
-    display: flex
-    justify-content: center
-
-  &__cucarachas
-    background-size: 100%
-    background-position: 100%
-    background-image: url(/img/productos/cucaracha.png)
-
-  &__grillo
-    background-size: 100%
-    background-position: 100%
-    background-image: url(/img/productos/grillo.png)
-  
-  &__raton
-    background-size: 100%
-    background-position: 100%
-    background-image: url(/img/productos/raton.png)
-
-
-.suplementos
-  background-image: url(/img/fondo/fondo-2.png)
-
-  &__contenedor
-    justify-content: space-around
-    flex-wrap: wrap
-
-.suplemento
-  width: 240px
-  height: 330px
+.filtro
+  height: 50vh
+  margin-right: 1rem
+  flex-direction: column
   text-align: center
-  background-color: $col2
+  justify-content: space-around
+  background-color: $col6
+
+  &__boton
+    margin: 1rem 0
+    background-color: $col9
+
+.activo
+  background-color: $col4
+
+.contenido
+  width: 100%
+  flex-wrap: wrap
+  justify-content: center
+  background: linear-gradient(120deg, $col8, $col9)
+
+.carta
+  width: 12rem
+  height: 15rem
+  padding: 0.2rem
+  margin: 0.5rem 2rem
+  color: $colb
+  background-color: $col1
+  transition: all 0.4s
+
+  &:hover
+    filter: brightness(20%)
 
   &__img
-    width: 180px
-    height: 180px
-    min-height: 100px
-    
+    width: 11.5rem
+    height: 11.5rem
+
   &__info
-    height: 3rem
-    margin-top: 1rem
-    color: $colb
-    background-color: $col4
-
-  &__mas
-    margin-bottom: 1rem
-    background-color: $col6
-
-.ver_mas
-  width: 30%
-  margin: auto
-  justify-content: center
-  background-color: $col8
+    margin-top: 0.2rem
+    text-align: center

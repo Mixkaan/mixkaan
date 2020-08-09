@@ -1,0 +1,23 @@
+extends ../layout
+block append config
+
+  -paginaActual = "Contactanos"
+  block append
+    link(rel="stylesheet", href="/styles/contactanos/contactanos.css")
+
+block main
+  br
+  section.email.-MEnu-margen.-Padd2
+    if succes != ''
+      h2= succes
+    div.formulario.-Padd.-Flex.-Rad
+      form(action="/enviar_email" method="POST").-Flex
+        label(for="nombre") NOMBRE
+        input(type="text" name="nombre" placeholder="Nombre" autofocus)
+        label(for="email") EMAIL
+        input(type="text" name="email" placeholder="Email")
+        label(for="telefono") TELEFONO
+        input(type="text" name="telefono" placeholder="Telefono")
+        label(for="mensaje") MENSAJE
+        textarea(name="mensaje", rows="5")
+        button.-Boton enviar

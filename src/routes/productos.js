@@ -3,20 +3,22 @@ const router = Router()
 
 const Producto = require('../models/Producto');
 
+
 //TODOS-DISPONIBLES
 router.get('/productos', async(req, res) => {
-  const productos = await Producto.find();
   const alimentos = await Producto.find({seccion: "alimento"});
-  const suplementos = await Producto.find({seccion: "suplementos"});
-  const mantenimiento = await Producto.find({seccion: "mantenimiento"});
-  const mas = await Producto.find({seccion: "mas"})
+  const suplementos = await Producto.find({seccion: "suplemento"});
+  const decoraciones = await Producto.find({seccion: "decoracion"});
+  const mantenimientos = await Producto.find({seccion: "mantenimiento"});
   res.render('productos/productos', {
-    productos,alimentos, suplementos, mantenimiento, mas
-  });
+    alimentos,suplementos,decoraciones,mantenimientos});
 });
 
-router.get('/productos/cucarachas', async(req, res) => {
-  res.render('productos/cucarachas');
+
+router.get('/comprar_producto/:id', async(req, res) => {
+  const {id} = req.params;
+  const producto = await Producto.findById(id);
+  res.render('productos/comprar_producto', {producto});
 });
 
 module.exports = router;

@@ -3,8 +3,8 @@ const {Schema, model} = require('mongoose');
 const productoSchema = new Schema({
     nombre: {type: String},
     descripcion: {type: String},
+    seccion: {type:String},
     precio: {type: Number},
-    categoria: {type: String},
     
     filename: {type: String},
     path: {type: String},

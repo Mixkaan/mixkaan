@@ -8,14 +8,13 @@ block append config
 block main
 
   br
-  section.animal.-Menu-margen.-Padd
-    br
-    br
-    div.carta.-Padd.-Flex.-Shadow
-      img.carta__img.-Borde(src=animal.path, alt="")
+  section.animal.-Menu-margen.-Padd2
+
+    div.carta.-Padd.-Flex.-Shadow.-Padd2._.WOW.animate__animated.animate__zoomIn
+      img.carta__img.-Borde(src=animal.path, alt="")._.WOW.animate__animated.animate__slideInRight
       br
       br
-      div.carta__info
+      div.carta__info._.WOW.animate__animated.animate__slideInLeft
         h2.nombre=animal.nombre
         br
         h4.sub PRECIO
@@ -28,4 +27,4 @@ block main
         h4=animal.descripcion
         br
         br
-        a.compra.-Boton-mas(href="/comprar/"+animal.id) ¡COMPRAR AHORA!
+        a.compra.-Boton-mas(href=""+animal.id) ¡COMPRAR AHORA!

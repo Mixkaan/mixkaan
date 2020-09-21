@@ -4,7 +4,7 @@
   justify-content: center
   grid-template-columns: auto auto
   background-size: cover
-  background-image: url(/img/fondo/fondo-2.svg)
+  background-image: url(/img/fondo/fondo-2.png)
 
   &__logo
     width: 30vw
@@ -47,6 +47,7 @@
   background-image: url(/img/fondo/fondo-4.png)
 
 .pluggin
+  animation-delay: 0.4s
 
 
 //----
@@ -104,6 +105,25 @@
   opacity: 1
 
 
+//--------------------------------------------------------------------
+.veterinaria
+  grid-template-columns: auto auto
+  background-image: url(/img/fondo/fondo-3.png)
+
+  &__logo
+    width: 50vw
+
+    img
+      width: 25vw
+      margin: 0 22%
+
+  &__info
+    color: $colb
+    background-color: $col2
+
+    h2
+      font-size: 3rem    
+
 //----
 .youtube
   background-image: url(/img/fondo/fondo-1.png)
@@ -117,6 +137,7 @@
     width: 80%
     height: 70%
     margin: 0 10%
+    animation-delay: 0.4s
 
 //----
 .grupo-whats
@@ -126,7 +147,7 @@
     rows: auto auto
   column-gap: 20%
   text-align: justify
-  background-color: $col6
+  background-color: $col8
 
   &__txt
     width: 20vw
@@ -135,6 +156,7 @@
   &__img
     width: 20vw
     height: auto
+    animation-delay: 0.4s
 
 //----
 .nosotros
@@ -146,6 +168,8 @@
     width: 80%
     margin: auto
     background-color: $colb
+    animation-delay: 0.4s
+    animation-duration: 2s
 
 
 @media screen and (max-width: 800px)

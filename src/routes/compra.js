@@ -1,22 +1,19 @@
 const { Router } = require('express');
 const router = Router()
-
+//modelos
 const Animal = require('../models/Animal');
+const Producto = require('../models/Producto');
 
-
-
-//SELECIONAR-ANIMAL-&-REDIRECIONAR-A-MAS-INFORMACION
-router.get('/comprar/:id', async(req, res) => {
+//ELIMINAR-DESPUES-DE-LA-COMPRA--------------------//
+router.get('null', async(req, res) => {
   const {id} = req.params;
-  const animal = await Animal.findById(id);
-  res.render('comprar', {animal});
-
+  const animal = await Animal.findByIdAndDelete(id);
+  await unlink(path.resolve('./src/public' + animal.path));
+  const producto = await Producto.findByIdAndDelete(id);
+  await unlink(path.resolve('./src/public' + producto.path));
+  res.render('/');
 });
 
 
-//EL-METODO-DE-COMPRE ESTA-EN LA VISTA
-
-
-//FINALIZAR-LA-COMPRA-Y-ELIMINAR-EL-(PRODUCTO/ANIMAL)
 
 module.exports = router;

@@ -33,10 +33,10 @@ router.get('/disponible/tortugas', async(req, res) => {
 
 
 //SELECIONAR-ANIMAL-&-REDIRECIONAR-A-MAS-INFORMACION
-router.get('/animal-info/:id', async(req, res) => {
+router.get('/info_producto/:id', async(req, res) => {
   const {id} = req.params;
   const animal = await Animal.findById(id);
-  res.render('disponible/animal-info', {animal});
+  res.render('productos/info_producto', {animal});
 });
 
 

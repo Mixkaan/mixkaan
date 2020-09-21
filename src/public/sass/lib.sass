@@ -46,7 +46,7 @@
 
 
 .-Shadow
-  box-shadow: rgba(0, 0, 0, 0.5) 3px 6px 10px 2px
+  box-shadow: rgba(0, 0, 0, 0.7) 3px 6px 10px 2px
 
 
 
@@ -73,11 +73,12 @@
   border-radius: 3px
   border: 1px solid #00000060
   color: $coln
-  background-color: $col4
+  background-color: $col6
   transition: all 0.4s
+
   &:hover
     color: $colb
-    background-color: $col3
+    filter: brightness(170%)
 
 .-Boton-alert
   padding: 0.1rem 0.5rem
@@ -85,3 +86,6 @@
   border: 1px solid #00000060
   color: $colb
   background-color: $col2
+  
+  &:hover
+    filter: brightness(170%)

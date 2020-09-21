@@ -9,7 +9,7 @@ block main
   br
   section.contenedor.-Menu-margen.-Flex.-Padd2
 
-    div.filtro.-Flex.-Padd.-Rad2
+    div.filtro.-Flex.-Padd.-Rad2.-Shadow._.WOW.animate__animated.animate__flipInX
 
       a(href="#", categoria="todo").filtro__boton.-Boton Todo
       a(href="#", categoria="alimento").filtro__boton.-Boton Alimento
@@ -17,27 +17,27 @@ block main
       a(href="#", categoria="decoracion").filtro__boton.-Boton Decoracion
       a(href="#", categoria="mantenimiento").filtro__boton.-Boton Mantenimiento
 
-    div.contenido.-Padd.-Flex.-Rad
+    div.contenido.-Padd.-Flex.-Rad.-Shadow
       for alimento in alimentos
-        a(href="/comprar_producto/"+alimento.id categoria=alimento.seccion).carta.-Rad
+        a(href="/info_producto/"+alimento.id categoria=alimento.seccion).carta.-Rad.-Shadow._.WOW.animate__animated.animate__zoomIn
           div
             img.carta__img(src=alimento.path, alt=alimento.nombre)
             p.carta__info= alimento.nombre
 
       for suplemento in suplementos
-        a(href="/comprar_producto/"+suplemento.id categoria=suplemento.seccion).carta.-Rad
+        a(href="/info_producto/"+suplemento.id categoria=suplemento.seccion).carta.-Rad.-Shadow._.WOW.animate__animated.animate__zoomIn
           div
             img.carta__img(src=suplemento.path, alt=suplemento.nombre)
             p.carta__info= suplemento.nombre
 
       for decoracion in decoraciones
-        a(href="/comprar_producto/"+decoracion.id categoria=decoracion.seccion).carta.-Rad
+        a(href="/info_producto/"+decoracion.id categoria=decoracion.seccion).carta.-Rad.-Shadow._.WOW.animate__animated.animate__zoomIn
           div
             img.carta__img(src=decoracion.path, alt=decoracion.nombre)
             p.carta__info= decoracion.nombre
 
       for mantenimiento in mantenimientos
-        a(href="/comprar_producto/"+mantenimiento.id categoria=mantenimiento.seccion).carta.-Rad
+        a(href="/info_producto/"+mantenimiento.id categoria=mantenimiento.seccion).carta.-Rad.-Shadow._.WOW.animate__animated.animate__zoomIn
           div
             img.carta__img(src=mantenimiento.path, alt=mantenimiento.nombre)
             p.carta__info= mantenimiento.nombre

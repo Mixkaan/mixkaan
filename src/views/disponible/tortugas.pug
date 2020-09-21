@@ -12,9 +12,9 @@ block main
   div.contenedor
     for tortuga in animales
     
-      a.carta.Rad(href="/animal-info/"+tortuga.id)
+      a.carta.Rad(href="/animal-info/"+tortuga.id).-Shadow
         div
-          img.animal-img(src=tortuga.path, alt=tortuga.nombre)
+          img.animal-img(src=tortuga.path, alt=tortuga.nombre, loading="lazy")
           br
           br
           div.info
@@ -25,7 +25,7 @@ block main
 
 
     //NO DISPONIBLE
-    div.carta.-Rad
+    div.carta.-Rad.-Shadow
       div
         img.animal-img(src="/img/no-disponible/tortugas/t-sulcata.png", alt="")
         br
@@ -36,7 +36,7 @@ block main
       div.opacidad.-Rad
         p.-Btn.alerta FUERA DE STOCK
 
-    div.carta.-Rad
+    div.carta.-Rad.-Shadow
       div
         img.animal-img(src="/img/no-disponible/tortugas/t-lagarto.png", alt="")
         br

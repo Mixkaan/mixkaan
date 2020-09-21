@@ -9,10 +9,18 @@
     width: 90%
     height: 10rem
     margin: 2rem 0
+    transition: all 2s
+
+    &:nth-child(1n)
+      &:hover
+        background-size: 101%
+        background-position: 50%
+      
 
     &:nth-child(1)
       background-size: 100%
       background-image: url(/img/disponible/lagartos.png)
+      animation-delay: 0.4s
       &::before
         content: "LAGARTOS"
         float: right
@@ -24,6 +32,7 @@
     &:nth-child(2)
       background-size: 100%
       background-image: url(/img/disponible/serpientes.png)
+      animation-delay: 0.8s
       &::before
         content: "SERPIENTES"
         float: right
@@ -35,6 +44,7 @@
     &:nth-child(3)
       background-size: 100%
       background-image: url(/img/disponible/tortugas.png)
+      animation-delay: 1s
       &::before
         content: "TORTUGAS"
         float: right
@@ -51,6 +61,9 @@
   position: absolute
   margin-top: -2rem
   margin-left: -4rem
+  &:nth-child(1n)
+    animation-delay: 0.8s
+    
 
 
 @media screen and (max-width: 800px)

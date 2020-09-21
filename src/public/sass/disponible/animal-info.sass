@@ -6,7 +6,7 @@
 .carta
   width: 90%
   margin: auto
-  background-color: $col5
+  background-color: $col4
   justify-content: space-around
 
   &__img
@@ -14,10 +14,12 @@
     height: auto
 
   &__info
-    padding-top: 2rem
     padding-right: 2rem
     text-align: center
     color: $colb 
+
+p
+  font-size: 1.8rem
 
 p::before
   content: '$'
@@ -28,4 +30,16 @@ p::before
   text-transform: uppercase
   font-size: 2.2rem
 .sub
-  font-size: 2rem
+  font-size: 1.8rem
+
+
+
+
+@media screen and (max-width: 800px)
+  .carta
+    width: 100%
+    justify-content: center
+    flex-wrap: wrap
+
+    &__info
+      padding-right: 0

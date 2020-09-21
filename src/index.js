@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const multer = require('multer');
+const bodyParser = require('body-parser');
 
 const { v4: uuidv4 } = require('uuid');
 uuidv4();
@@ -44,7 +45,7 @@ app.use(multer({
   storage
 }).single('imagen'));
 
-
+app.use(bodyParser.json());
 
 //RUTAS
 app.use(require('./routes/inicio'));

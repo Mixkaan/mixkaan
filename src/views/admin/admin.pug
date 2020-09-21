@@ -60,14 +60,16 @@ block main
           th ACCIONES
         tbody.tabla__cuerpo
           for animal in animales
-            td= animal.id
-            td= animal.nombre
-            td= animal.descripcion
-            td= animal.seccion
-            td= animal.sexo
-            td= animal.edad
-            td
-              img(src=animal.path)
-            td
-              a.-boton.eliminar(href="/animal/" + animal.id + "/eliminar") ELIMINAR
+            tr
+            tr
+              td= animal.id
+              td= animal.nombre
+              td= animal.descripcion
+              td= animal.seccion
+              td= animal.sexo
+              td= animal.edad
+              td
+                img(src=animal.path)
+              td
+                a.-boton.eliminar(href="/animal/" + animal.id + "/eliminar") ELIMINAR
 

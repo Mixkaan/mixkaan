@@ -1,30 +1,40 @@
 extends ../layout
 block append config
 
-  -paginaActual = animal.nombre
+  -paginaActual= animal.nombre
   block append
     link(rel="stylesheet", href="/styles/disponible/animal-info.css")
 
+    script(src="https://js.stripe.com/v3/")
 block main
 
   br
   section.animal.-Menu-margen.-Padd2
-
-    div.carta.-Padd.-Flex.-Shadow.-Padd2._.WOW.animate__animated.animate__zoomIn
-      img.carta__img.-Borde(src=animal.path, alt="")._.WOW.animate__animated.animate__slideInRight
+    div.carta.-Padd.-Flex.-Shadow.-Padd2
+      img.carta__img.-Borde(src=animal.path ,alt='')
       br
       br
-      div.carta__info._.WOW.animate__animated.animate__slideInLeft
-        h2.nombre=animal.nombre
+      div.carta__info
+        h2.nombre= animal.nombre
         br
         h4.sub PRECIO
-        p=animal.precio
+        p= animal.precio
         br
-        h4.sub FASES
-        h4=animal.fases
+        h4= animal.descripcion
         br
-        h4.sub  DESCRIPCIÓN
-        h4=animal.descripcion
+        h4.sub CATEGORIA
+        h4= animal.seccion
         br
         br
-        a.compra.-Boton-mas(href=""+animal.id) ¡COMPRAR AHORA!
+        //aqui va el boton de stripe
+        form(action='/compra/animal/'+(animal.id) method='POST')
+          script.stripe-button(
+            src='https://checkout.stripe.com/checkout.js' 
+            data-key='pk_test_vszwAbDx8zPg1AZrZn6Ec4Lr00i0d7OeHj'
+            data-amount= (animal.precio*100)
+            data-name='ÚNICO REPTILES'
+            data-description=(animal.descripcion)
+            data-image='/img/logo.png'
+            data-locale='auto'
+            data-currency='mxn'
+          )

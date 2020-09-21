@@ -33,12 +33,10 @@ router.get('/disponible/tortugas', async(req, res) => {
 
 
 //SELECIONAR-ANIMAL-&-REDIRECIONAR-A-MAS-INFORMACION
-router.get('/info_producto/:id', async(req, res) => {
+router.get('/info_animal/:id', async(req, res) => {
   const {id} = req.params;
   const animal = await Animal.findById(id);
-  res.render('productos/info_producto', {animal});
+  res.render('disponible/animal-info', {animal});
 });
-
-
 
 module.exports = router;

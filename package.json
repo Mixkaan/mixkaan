@@ -24,7 +24,7 @@
     "nodemailer": "^6.4.11",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "stripe": "^8.96.0",
     "timeago.js": "^4.0.2",
     "uuid": "^7.0.3"
